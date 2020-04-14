@@ -1,24 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UHX-vv-TDz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login ScreenVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginScreenVC" customModule="OneOfficeManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="M5k-ZK-tgs">
+                                <rect key="frame" x="90" y="258" width="234" height="380"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Qex-12-FNJ">
+                                        <rect key="frame" x="47" y="0.0" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="140" id="9pZ-Sc-Vkb"/>
+                                            <constraint firstAttribute="width" constant="140" id="Cbj-j4-J1r"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="GBc-Q3-7Ly"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="attila.ianosi@yahoo.com" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6yN-wH-lYy">
+                                        <rect key="frame" x="0.0" y="175" width="234" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="FKS-uw-WX7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dpw-g9-mWW">
+                                        <rect key="frame" x="0.0" y="255" width="234" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="1YC-Yu-Tt1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yH-CV-H4e">
+                                        <rect key="frame" x="0.0" y="335" width="234" height="45"/>
+                                        <color key="backgroundColor" red="0.9686310279" green="0.54116963279999997" blue="0.60494281530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="yF8-HZ-Mtg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Sign In"/>
+                                        <connections>
+                                            <action selector="signInBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mMJ-kn-enZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5yH-CV-H4e" firstAttribute="leading" secondItem="M5k-ZK-tgs" secondAttribute="leading" id="463-Op-c0W"/>
+                                    <constraint firstAttribute="trailing" secondItem="6yN-wH-lYy" secondAttribute="trailing" id="Jvv-bJ-NYw"/>
+                                    <constraint firstItem="dpw-g9-mWW" firstAttribute="leading" secondItem="M5k-ZK-tgs" secondAttribute="leading" id="Qh8-w1-wZE"/>
+                                    <constraint firstAttribute="trailing" secondItem="5yH-CV-H4e" secondAttribute="trailing" id="Qiz-nd-0fu"/>
+                                    <constraint firstItem="6yN-wH-lYy" firstAttribute="leading" secondItem="M5k-ZK-tgs" secondAttribute="leading" id="UFO-3g-zJZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="dpw-g9-mWW" secondAttribute="trailing" id="lG5-Ne-afo"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="M5k-ZK-tgs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BF9-Kn-9QA"/>
+                            <constraint firstItem="M5k-ZK-tgs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="HRE-a7-z70"/>
+                            <constraint firstItem="M5k-ZK-tgs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgY-DK-xQP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M5k-ZK-tgs" secondAttribute="trailing" constant="90" id="tL0-wU-5dH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="appLogoLogin" destination="Qex-12-FNJ" id="akZ-Cw-A6r"/>
+                        <outlet property="passwordDetailsTextField" destination="dpw-g9-mWW" id="wf8-JX-8YA"/>
+                        <outlet property="signInBtn" destination="5yH-CV-H4e" id="MKm-cn-Tpe"/>
+                        <outlet property="userDetailsTextField" destination="6yN-wH-lYy" id="1oT-EJ-c9s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--Employee Main MenuVC-->
+        <scene sceneID="kr3-1D-ihM">
+            <objects>
+                <viewController id="UHX-vv-TDz" customClass="EmployeeMainMenuVC" customModule="OneOfficeManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="odW-K5-fRw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31U-qY-mJR">
+                                <rect key="frame" x="0.0" y="84" width="414" height="49.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" red="0.92156862750000001" green="0.3411764706" blue="0.3411764706" alpha="0.61073951199999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qrx-0b-Ie3">
+                                <rect key="frame" x="0.0" y="173.5" width="414" height="688.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9v-JO-LDL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.3411764706" blue="0.3411764706" alpha="0.61073951199999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Branch Focus"/>
+                                        <connections>
+                                            <action selector="branchFocusBtnPressed:" destination="UHX-vv-TDz" eventType="touchUpInside" id="Og2-4R-sSe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3n-66-N5W">
+                                        <rect key="frame" x="0.0" y="175" width="414" height="163.5"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.3411764706" blue="0.3411764706" alpha="0.61073951199999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Holiday Booking"/>
+                                        <connections>
+                                            <action selector="holidayBookingPressed:" destination="UHX-vv-TDz" eventType="touchUpInside" id="g7n-AP-d8u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJP-7J-vv3">
+                                        <rect key="frame" x="0.0" y="350.5" width="414" height="163"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.3411764706" blue="0.3411764706" alpha="0.61073951199999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Pocket"/>
+                                        <connections>
+                                            <action selector="pocketBtnPressed:" destination="UHX-vv-TDz" eventType="touchUpInside" id="5oQ-VB-ZbV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBD-F8-xtT">
+                                        <rect key="frame" x="0.0" y="525.5" width="414" height="163"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.3411764706" blue="0.3411764706" alpha="0.61073951199999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="User Info"/>
+                                        <connections>
+                                            <action selector="userInfoBtnPressed:" destination="UHX-vv-TDz" eventType="touchUpInside" id="4Rp-2c-dXZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="C3n-66-N5W" secondAttribute="trailing" id="2D8-Ns-eoS"/>
+                                    <constraint firstItem="C3n-66-N5W" firstAttribute="leading" secondItem="qrx-0b-Ie3" secondAttribute="leading" id="IIb-Ud-UT0"/>
+                                    <constraint firstAttribute="trailing" secondItem="LBD-F8-xtT" secondAttribute="trailing" id="V2p-dH-h9v"/>
+                                    <constraint firstAttribute="trailing" secondItem="k9v-JO-LDL" secondAttribute="trailing" id="YBc-iU-Aia"/>
+                                    <constraint firstItem="k9v-JO-LDL" firstAttribute="leading" secondItem="qrx-0b-Ie3" secondAttribute="leading" id="fqq-iK-Vlz"/>
+                                    <constraint firstAttribute="trailing" secondItem="lJP-7J-vv3" secondAttribute="trailing" id="jLV-fa-9JQ"/>
+                                    <constraint firstItem="lJP-7J-vv3" firstAttribute="leading" secondItem="qrx-0b-Ie3" secondAttribute="leading" id="lg6-y0-pyk"/>
+                                    <constraint firstItem="LBD-F8-xtT" firstAttribute="leading" secondItem="qrx-0b-Ie3" secondAttribute="leading" id="tAh-kV-k1Z"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JGf-9E-CKK" firstAttribute="bottom" secondItem="qrx-0b-Ie3" secondAttribute="bottom" id="2Yq-3s-a1J"/>
+                            <constraint firstItem="qrx-0b-Ie3" firstAttribute="top" secondItem="31U-qY-mJR" secondAttribute="bottom" constant="40" id="9fe-VN-coD"/>
+                            <constraint firstItem="31U-qY-mJR" firstAttribute="top" secondItem="JGf-9E-CKK" secondAttribute="top" constant="40" id="ZaJ-yO-SzK"/>
+                            <constraint firstItem="JGf-9E-CKK" firstAttribute="trailing" secondItem="31U-qY-mJR" secondAttribute="trailing" id="b8A-9D-LIP"/>
+                            <constraint firstItem="JGf-9E-CKK" firstAttribute="trailing" secondItem="qrx-0b-Ie3" secondAttribute="trailing" id="cNG-YC-xTu"/>
+                            <constraint firstItem="31U-qY-mJR" firstAttribute="leading" secondItem="JGf-9E-CKK" secondAttribute="leading" id="rv3-Yk-hqD"/>
+                            <constraint firstItem="qrx-0b-Ie3" firstAttribute="leading" secondItem="JGf-9E-CKK" secondAttribute="leading" id="vTe-bu-jgP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JGf-9E-CKK"/>
+                    </view>
+                    <connections>
+                        <outlet property="branchFocusBtn" destination="k9v-JO-LDL" id="tAA-8Y-u7v"/>
+                        <outlet property="holidayBookingBtn" destination="C3n-66-N5W" id="WKI-cJ-Vru"/>
+                        <outlet property="pocketBtn" destination="lJP-7J-vv3" id="u0R-Gl-Opr"/>
+                        <outlet property="userInfoBtn" destination="LBD-F8-xtT" id="cUr-ab-YuS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CuN-2d-OYT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="127"/>
+        </scene>
+        <!--Branch Focus-->
+        <scene sceneID="Ws8-by-mJC">
+            <objects>
+                <viewController title="Branch Focus" id="4id-DF-ofN" customClass="EmployeeBranchFocusVC" customModule="OneOfficeManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vfI-mw-g25">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Branch News" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyK-r7-han">
+                                <rect key="frame" x="40" y="118" width="334" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="AFm-Wu-qJ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                <color key="textColor" red="0.92156862745098034" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bx6-Gw-2DY">
+                                <rect key="frame" x="10" y="179" width="394" height="634"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="193" id="93l-5c-Q5k">
+                                        <rect key="frame" x="0.0" y="28" width="394" height="193"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="93l-5c-Q5k" id="45U-mV-Sly">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="193"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car Tax Payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1a-Go-gFz">
+                                                    <rect key="frame" x="20" y="11" width="189" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
+                                                    <color key="textColor" red="0.080323077739999998" green="0.21182638409999999" blue="0.2289803624" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Harshil Patel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsL-5c-dGS">
+                                                    <rect key="frame" x="28" y="52" width="100" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="22.12.2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4B-Fp-HAl">
+                                                    <rect key="frame" x="28" y="85" width="61" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eyK-r7-han" firstAttribute="top" secondItem="SHb-Ko-rxP" secondAttribute="top" constant="30" id="4gq-dY-6nY"/>
+                            <constraint firstItem="SHb-Ko-rxP" firstAttribute="trailing" secondItem="bx6-Gw-2DY" secondAttribute="trailing" constant="10" id="FEU-HP-sLs"/>
+                            <constraint firstItem="SHb-Ko-rxP" firstAttribute="bottom" secondItem="bx6-Gw-2DY" secondAttribute="bottom" id="Vkc-jP-sCZ"/>
+                            <constraint firstItem="bx6-Gw-2DY" firstAttribute="top" secondItem="eyK-r7-han" secondAttribute="bottom" constant="30" id="Y6w-0b-NNG"/>
+                            <constraint firstItem="eyK-r7-han" firstAttribute="leading" secondItem="SHb-Ko-rxP" secondAttribute="leading" constant="40" id="bLh-e7-53F"/>
+                            <constraint firstItem="bx6-Gw-2DY" firstAttribute="leading" secondItem="SHb-Ko-rxP" secondAttribute="leading" constant="10" id="iD0-Ud-JUz"/>
+                            <constraint firstItem="SHb-Ko-rxP" firstAttribute="trailing" secondItem="eyK-r7-han" secondAttribute="trailing" constant="40" id="y4Y-lZ-j73"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SHb-Ko-rxP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Branch Focus" image="globe" catalog="system" id="tKc-e1-ZPu"/>
+                    <navigationItem key="navigationItem" id="kYf-D5-Ym6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQT-mM-CXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1969.5652173913045" y="409.82142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4KO-Ig-rLN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vci-JD-ecg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A6o-HN-PsC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ts7-m7-0Su" kind="relationship" relationship="rootViewController" id="u2L-TC-6Ma"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDE-Ib-z4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="-658"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7rj-OK-Cgv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ts7-m7-0Su" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="VwM-2r-Jmi"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3GL-0g-fof">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4id-DF-ofN" kind="relationship" relationship="viewControllers" id="dBT-QG-qRb"/>
+                        <segue destination="RGL-Wb-9HE" kind="relationship" relationship="viewControllers" id="FSV-x7-Zan"/>
+                        <segue destination="jjU-WE-ArG" kind="relationship" relationship="viewControllers" id="K8O-5J-xKE"/>
+                        <segue destination="N37-mC-fSp" kind="relationship" relationship="viewControllers" id="5qG-dH-CXy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7o-tF-jx2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2739" y="-658"/>
+        </scene>
+        <!--User Info-->
+        <scene sceneID="LTD-I4-Qdp">
+            <objects>
+                <viewController id="N37-mC-fSp" customClass="EmployeeUserInfoVC" customModule="OneOfficeManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dK9-V5-xkc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QKC-Wr-Ci4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="User Info" image="person.crop.circle.fill" catalog="system" id="4Mq-ct-5P0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXd-ih-Wee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4554" y="410"/>
+        </scene>
+        <!--Pocket-->
+        <scene sceneID="s5E-6g-YNt">
+            <objects>
+                <viewController id="jjU-WE-ArG" customClass="EmployeePocketVC" customModule="OneOfficeManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BeA-3Q-L4v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cKO-Le-6zp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pocket" image="folder.fill.badge.plus" catalog="system" id="dd3-i8-8Gb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APO-Wu-dUr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3723" y="410"/>
+        </scene>
+        <!--Holiday Booking-->
+        <scene sceneID="yPC-S2-D8E">
+            <objects>
+                <viewController title="Holiday Booking" id="RGL-Wb-9HE" customClass="EmployeeHolidayBookingVC" customModule="OneOfficeManagement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t6L-Iq-Saq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4Nv-p9-Ms5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Holiday" image="calendar" catalog="system" id="6FX-Wg-mh1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Js3-oh-fUu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2855" y="410"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="folder.fill.badge.plus" catalog="system" width="128" height="86"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="mainLogo" width="512" height="512"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

@@ -19,6 +19,9 @@
 		0D5368CD2446181200027840 /* EmployeePocketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CC2446181200027840 /* EmployeePocketVC.swift */; };
 		0D5368CF2446183900027840 /* EmployeeUserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CE2446183900027840 /* EmployeeUserInfoVC.swift */; };
 		0D5368D12446187400027840 /* EmployeeHolidayBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D02446187400027840 /* EmployeeHolidayBookingVC.swift */; };
+		0D5368D324461FBD00027840 /* BranchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D224461FBD00027840 /* BranchInfo.swift */; };
+		0D5368D5244620C100027840 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D4244620C100027840 /* DataService.swift */; };
+		0D5368D82446245900027840 /* BranchInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D72446245900027840 /* BranchInfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		0D5368CC2446181200027840 /* EmployeePocketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeePocketVC.swift; sourceTree = "<group>"; };
 		0D5368CE2446183900027840 /* EmployeeUserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeUserInfoVC.swift; sourceTree = "<group>"; };
 		0D5368D02446187400027840 /* EmployeeHolidayBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeHolidayBookingVC.swift; sourceTree = "<group>"; };
+		0D5368D224461FBD00027840 /* BranchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfo.swift; sourceTree = "<group>"; };
+		0D5368D4244620C100027840 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		0D5368D72446245900027840 /* BranchInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		0D5368AC2445ECA900027840 /* OneOfficeManagement */ = {
 			isa = PBXGroup;
 			children = (
+				0D5368D62446211D00027840 /* Services */,
 				0D5368C52445ECEF00027840 /* Model */,
 				0D5368C62445ED0200027840 /* View */,
 				0D5368C72445ED0B00027840 /* Controller */,
@@ -86,6 +93,7 @@
 		0D5368C52445ECEF00027840 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0D5368D224461FBD00027840 /* BranchInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 		0D5368C62445ED0200027840 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0D5368D72446245900027840 /* BranchInfoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -107,6 +116,14 @@
 				0D5368D02446187400027840 /* EmployeeHolidayBookingVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D5368D62446211D00027840 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0D5368D4244620C100027840 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +202,9 @@
 				0D5368B22445ECA900027840 /* LoginScreenVC.swift in Sources */,
 				0D5368AE2445ECA900027840 /* AppDelegate.swift in Sources */,
 				0D5368B82445ECA900027840 /* OneOfficeManagement.xcdatamodeld in Sources */,
+				0D5368D5244620C100027840 /* DataService.swift in Sources */,
+				0D5368D82446245900027840 /* BranchInfoCell.swift in Sources */,
+				0D5368D324461FBD00027840 /* BranchInfo.swift in Sources */,
 				0D5368CD2446181200027840 /* EmployeePocketVC.swift in Sources */,
 				0D5368B02445ECA900027840 /* SceneDelegate.swift in Sources */,
 				0D5368CB244616DF00027840 /* EmployeeBranchFocusVC.swift in Sources */,

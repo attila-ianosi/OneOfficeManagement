@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UHX-vv-TDz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4id-DF-ofN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -200,37 +200,59 @@
                                 <rect key="frame" x="10" y="179" width="394" height="634"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="193" id="93l-5c-Q5k">
-                                        <rect key="frame" x="0.0" y="28" width="394" height="193"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BranchInfoCell" rowHeight="100" id="93l-5c-Q5k" customClass="BranchInfoCell" customModule="OneOfficeManagement" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="394" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="93l-5c-Q5k" id="45U-mV-Sly">
-                                            <rect key="frame" x="0.0" y="0.0" width="394" height="193"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car Tax Payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1a-Go-gFz">
-                                                    <rect key="frame" x="20" y="11" width="189" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Tax Payments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1a-Go-gFz">
+                                                    <rect key="frame" x="20" y="11" width="354" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="x2H-Wi-ohT"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                                                     <color key="textColor" red="0.080323077739999998" green="0.21182638409999999" blue="0.2289803624" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Harshil Patel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsL-5c-dGS">
-                                                    <rect key="frame" x="28" y="52" width="100" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harshil Patel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsL-5c-dGS">
+                                                    <rect key="frame" x="20" y="46" width="354" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="9OD-ZS-lCM"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="22.12.2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4B-Fp-HAl">
-                                                    <rect key="frame" x="28" y="85" width="61" height="17"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22.12.2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4B-Fp-HAl">
+                                                    <rect key="frame" x="20" y="71" width="354" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="bop-cI-TGS"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hsL-5c-dGS" firstAttribute="top" secondItem="W1a-Go-gFz" secondAttribute="bottom" constant="5" id="5BH-ye-GzB"/>
+                                                <constraint firstItem="W1a-Go-gFz" firstAttribute="top" secondItem="45U-mV-Sly" secondAttribute="topMargin" id="7sS-Ye-OHx"/>
+                                                <constraint firstItem="W1a-Go-gFz" firstAttribute="leading" secondItem="45U-mV-Sly" secondAttribute="leadingMargin" id="82W-up-uXW"/>
+                                                <constraint firstItem="g4B-Fp-HAl" firstAttribute="leading" secondItem="45U-mV-Sly" secondAttribute="leadingMargin" id="BVW-Mz-XLq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="W1a-Go-gFz" secondAttribute="trailing" id="W1d-wS-FwH"/>
+                                                <constraint firstItem="hsL-5c-dGS" firstAttribute="leading" secondItem="45U-mV-Sly" secondAttribute="leadingMargin" id="fIe-U3-ccX"/>
+                                                <constraint firstItem="g4B-Fp-HAl" firstAttribute="top" secondItem="hsL-5c-dGS" secondAttribute="bottom" id="jmI-Nr-tnA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="g4B-Fp-HAl" secondAttribute="trailing" id="knq-VP-rxf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hsL-5c-dGS" secondAttribute="trailing" id="rAd-GC-CzD"/>
+                                            </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="g4B-Fp-HAl" id="ftJ-a3-uMM"/>
+                                            <outlet property="managerName" destination="hsL-5c-dGS" id="LKL-Ma-58y"/>
+                                            <outlet property="subjectTitle" destination="W1a-Go-gFz" id="Dyz-V1-FMP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -249,6 +271,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Branch Focus" image="globe" catalog="system" id="tKc-e1-ZPu"/>
                     <navigationItem key="navigationItem" id="kYf-D5-Ym6"/>
+                    <connections>
+                        <outlet property="branchFocusTableView" destination="bx6-Gw-2DY" id="0yt-9j-i1U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQT-mM-CXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

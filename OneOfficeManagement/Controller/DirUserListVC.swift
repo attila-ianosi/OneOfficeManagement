@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EmployeeHolidayBookingVC: UIViewController {
+class DirUserListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

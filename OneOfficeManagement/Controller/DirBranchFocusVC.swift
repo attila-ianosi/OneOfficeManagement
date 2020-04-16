@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EmpBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class DirBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
     
@@ -20,6 +20,7 @@ class EmpBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDele
         
         branchFocusTableView.dataSource = self
         branchFocusTableView.delegate = self
+       
 
         
     }
@@ -33,6 +34,7 @@ class EmpBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDele
         if let cell = tableView.dequeueReusableCell(withIdentifier: "BranchInfoCell") as? BranchInfoCell{
             let branchNews = DataService.instance.getBranchNews()[indexPath.row]
             cell.updateNews(infoNews: branchNews)
+            tableView.rowHeight = 100
             
             return cell
         } else {
@@ -41,7 +43,4 @@ class EmpBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDele
         
     }
     
-
-
-
 }

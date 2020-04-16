@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,14 +14,19 @@
 		0D5368B82445ECA900027840 /* OneOfficeManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368B62445ECA900027840 /* OneOfficeManagement.xcdatamodeld */; };
 		0D5368BA2445ECAB00027840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5368B92445ECAB00027840 /* Assets.xcassets */; };
 		0D5368BD2445ECAB00027840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5368BB2445ECAB00027840 /* LaunchScreen.storyboard */; };
-		0D5368C9244602CB00027840 /* EmployeeMainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368C8244602CB00027840 /* EmployeeMainMenuVC.swift */; };
-		0D5368CB244616DF00027840 /* EmployeeBranchFocusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CA244616DF00027840 /* EmployeeBranchFocusVC.swift */; };
-		0D5368CD2446181200027840 /* EmployeePocketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CC2446181200027840 /* EmployeePocketVC.swift */; };
-		0D5368CF2446183900027840 /* EmployeeUserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CE2446183900027840 /* EmployeeUserInfoVC.swift */; };
-		0D5368D12446187400027840 /* EmployeeHolidayBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D02446187400027840 /* EmployeeHolidayBookingVC.swift */; };
+		0D5368C9244602CB00027840 /* DirectorMainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368C8244602CB00027840 /* DirectorMainMenuVC.swift */; };
+		0D5368CB244616DF00027840 /* DirBranchFocusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CA244616DF00027840 /* DirBranchFocusVC.swift */; };
+		0D5368CD2446181200027840 /* DirSalesHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CC2446181200027840 /* DirSalesHistoryVC.swift */; };
+		0D5368CF2446183900027840 /* DirCreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CE2446183900027840 /* DirCreateUserVC.swift */; };
+		0D5368D12446187400027840 /* DirUserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D02446187400027840 /* DirUserListVC.swift */; };
 		0D5368D324461FBD00027840 /* BranchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D224461FBD00027840 /* BranchInfo.swift */; };
 		0D5368D5244620C100027840 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D4244620C100027840 /* DataService.swift */; };
 		0D5368D82446245900027840 /* BranchInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D72446245900027840 /* BranchInfoCell.swift */; };
+		0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */; };
+		0DDE54E424478AF300EC0B72 /* UserTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE54E324478AF300EC0B72 /* UserTable.swift */; };
+		0DDE54E62447A12300EC0B72 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE54E52447A12300EC0B72 /* RealmService.swift */; };
+		0DDE54E82447A88E00EC0B72 /* DirUserTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */; };
+		15F0BBBE368480E0AD52B639 /* Pods_OneOfficeManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F14D0B7D654A036E01EF20 /* Pods_OneOfficeManagement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +39,21 @@
 		0D5368B92445ECAB00027840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D5368BC2445ECAB00027840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D5368BE2445ECAB00027840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D5368C8244602CB00027840 /* EmployeeMainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMainMenuVC.swift; sourceTree = "<group>"; };
-		0D5368CA244616DF00027840 /* EmployeeBranchFocusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeBranchFocusVC.swift; sourceTree = "<group>"; };
-		0D5368CC2446181200027840 /* EmployeePocketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeePocketVC.swift; sourceTree = "<group>"; };
-		0D5368CE2446183900027840 /* EmployeeUserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeUserInfoVC.swift; sourceTree = "<group>"; };
-		0D5368D02446187400027840 /* EmployeeHolidayBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeHolidayBookingVC.swift; sourceTree = "<group>"; };
+		0D5368C8244602CB00027840 /* DirectorMainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectorMainMenuVC.swift; sourceTree = "<group>"; };
+		0D5368CA244616DF00027840 /* DirBranchFocusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirBranchFocusVC.swift; sourceTree = "<group>"; };
+		0D5368CC2446181200027840 /* DirSalesHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirSalesHistoryVC.swift; sourceTree = "<group>"; };
+		0D5368CE2446183900027840 /* DirCreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirCreateUserVC.swift; sourceTree = "<group>"; };
+		0D5368D02446187400027840 /* DirUserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirUserListVC.swift; sourceTree = "<group>"; };
 		0D5368D224461FBD00027840 /* BranchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfo.swift; sourceTree = "<group>"; };
 		0D5368D4244620C100027840 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0D5368D72446245900027840 /* BranchInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfoCell.swift; sourceTree = "<group>"; };
+		0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationUserCreatedVC.swift; sourceTree = "<group>"; };
+		0DDE54E324478AF300EC0B72 /* UserTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTable.swift; sourceTree = "<group>"; };
+		0DDE54E52447A12300EC0B72 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirUserTypeVC.swift; sourceTree = "<group>"; };
+		353F3FB31E97261DE727CB15 /* Pods-OneOfficeManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneOfficeManagement.release.xcconfig"; path = "Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement.release.xcconfig"; sourceTree = "<group>"; };
+		EF210F085305AA4B3FFCE763 /* Pods-OneOfficeManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneOfficeManagement.debug.xcconfig"; path = "Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		F1F14D0B7D654A036E01EF20 /* Pods_OneOfficeManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneOfficeManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15F0BBBE368480E0AD52B639 /* Pods_OneOfficeManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +71,13 @@
 		0D5368A12445ECA900027840 = {
 			isa = PBXGroup;
 			children = (
+				0D5368BB2445ECAB00027840 /* LaunchScreen.storyboard */,
+				0D5368AD2445ECA900027840 /* AppDelegate.swift */,
+				0D5368AF2445ECA900027840 /* SceneDelegate.swift */,
 				0D5368AC2445ECA900027840 /* OneOfficeManagement */,
 				0D5368AB2445ECA900027840 /* Products */,
+				17AB17FD669F701E6259C0AE /* Pods */,
+				A66549BC9D0A215AF08771E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,12 +96,9 @@
 				0D5368C52445ECEF00027840 /* Model */,
 				0D5368C62445ED0200027840 /* View */,
 				0D5368C72445ED0B00027840 /* Controller */,
-				0D5368AD2445ECA900027840 /* AppDelegate.swift */,
-				0D5368AF2445ECA900027840 /* SceneDelegate.swift */,
 				0D5368B12445ECA900027840 /* LoginScreenVC.swift */,
 				0D5368B32445ECA900027840 /* Main.storyboard */,
 				0D5368B92445ECAB00027840 /* Assets.xcassets */,
-				0D5368BB2445ECAB00027840 /* LaunchScreen.storyboard */,
 				0D5368BE2445ECAB00027840 /* Info.plist */,
 				0D5368B62445ECA900027840 /* OneOfficeManagement.xcdatamodeld */,
 			);
@@ -94,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				0D5368D224461FBD00027840 /* BranchInfo.swift */,
+				0DDE54E324478AF300EC0B72 /* UserTable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,11 +125,13 @@
 		0D5368C72445ED0B00027840 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0D5368C8244602CB00027840 /* EmployeeMainMenuVC.swift */,
-				0D5368CA244616DF00027840 /* EmployeeBranchFocusVC.swift */,
-				0D5368CC2446181200027840 /* EmployeePocketVC.swift */,
-				0D5368CE2446183900027840 /* EmployeeUserInfoVC.swift */,
-				0D5368D02446187400027840 /* EmployeeHolidayBookingVC.swift */,
+				0D5368C8244602CB00027840 /* DirectorMainMenuVC.swift */,
+				0D5368CA244616DF00027840 /* DirBranchFocusVC.swift */,
+				0D5368CC2446181200027840 /* DirSalesHistoryVC.swift */,
+				0D5368CE2446183900027840 /* DirCreateUserVC.swift */,
+				0D5368D02446187400027840 /* DirUserListVC.swift */,
+				0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */,
+				0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -122,8 +140,26 @@
 			isa = PBXGroup;
 			children = (
 				0D5368D4244620C100027840 /* DataService.swift */,
+				0DDE54E52447A12300EC0B72 /* RealmService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		17AB17FD669F701E6259C0AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF210F085305AA4B3FFCE763 /* Pods-OneOfficeManagement.debug.xcconfig */,
+				353F3FB31E97261DE727CB15 /* Pods-OneOfficeManagement.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A66549BC9D0A215AF08771E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F14D0B7D654A036E01EF20 /* Pods_OneOfficeManagement.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D5368C12445ECAB00027840 /* Build configuration list for PBXNativeTarget "OneOfficeManagement" */;
 			buildPhases = (
+				C11CEA56849192C9AC50DF11 /* [CP] Check Pods Manifest.lock */,
 				0D5368A62445ECA900027840 /* Sources */,
 				0D5368A72445ECA900027840 /* Frameworks */,
 				0D5368A82445ECA900027840 /* Resources */,
+				2A9144712DC3193CBB06D866 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,23 +230,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A9144712DC3193CBB06D866 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C11CEA56849192C9AC50DF11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneOfficeManagement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D5368A62445ECA900027840 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D5368C9244602CB00027840 /* EmployeeMainMenuVC.swift in Sources */,
-				0D5368D12446187400027840 /* EmployeeHolidayBookingVC.swift in Sources */,
+				0DDE54E82447A88E00EC0B72 /* DirUserTypeVC.swift in Sources */,
+				0D5368C9244602CB00027840 /* DirectorMainMenuVC.swift in Sources */,
+				0D5368D12446187400027840 /* DirUserListVC.swift in Sources */,
+				0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */,
 				0D5368B22445ECA900027840 /* LoginScreenVC.swift in Sources */,
 				0D5368AE2445ECA900027840 /* AppDelegate.swift in Sources */,
 				0D5368B82445ECA900027840 /* OneOfficeManagement.xcdatamodeld in Sources */,
 				0D5368D5244620C100027840 /* DataService.swift in Sources */,
 				0D5368D82446245900027840 /* BranchInfoCell.swift in Sources */,
 				0D5368D324461FBD00027840 /* BranchInfo.swift in Sources */,
-				0D5368CD2446181200027840 /* EmployeePocketVC.swift in Sources */,
+				0D5368CD2446181200027840 /* DirSalesHistoryVC.swift in Sources */,
+				0DDE54E62447A12300EC0B72 /* RealmService.swift in Sources */,
+				0DDE54E424478AF300EC0B72 /* UserTable.swift in Sources */,
 				0D5368B02445ECA900027840 /* SceneDelegate.swift in Sources */,
-				0D5368CB244616DF00027840 /* EmployeeBranchFocusVC.swift in Sources */,
-				0D5368CF2446183900027840 /* EmployeeUserInfoVC.swift in Sources */,
+				0D5368CB244616DF00027840 /* DirBranchFocusVC.swift in Sources */,
+				0D5368CF2446183900027840 /* DirCreateUserVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +434,7 @@
 		};
 		0D5368C22445ECAB00027840 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF210F085305AA4B3FFCE763 /* Pods-OneOfficeManagement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -368,6 +453,7 @@
 		};
 		0D5368C32445ECAB00027840 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 353F3FB31E97261DE727CB15 /* Pods-OneOfficeManagement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

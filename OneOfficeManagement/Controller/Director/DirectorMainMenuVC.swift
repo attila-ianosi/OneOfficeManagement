@@ -49,6 +49,7 @@ class DirectorMainMenuVC: UIViewController {
     @IBAction func userListBtnPressed(_ sender: UIButton) {
         
         
+        performSegue(withIdentifier: "goToUserList", sender: self)
     }
     
 }

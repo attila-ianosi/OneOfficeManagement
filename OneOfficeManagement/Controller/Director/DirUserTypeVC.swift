@@ -9,6 +9,8 @@
 import UIKit
 
 class DirUserTypeVC: UIViewController {
+    
+      
 
     override func viewDidLoad() {
         super.viewDidLoad()

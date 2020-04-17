@@ -20,11 +20,12 @@ class ConfirmationUserCreatedVC: UIViewController {
         super.viewDidLoad()
 
         confirmationLabel.text = "User \(finalUserName) has been created"
-        
+       
     }
     
     @IBAction func seeUsersBtn(_ sender: UIButton) {
         
+        performSegue(withIdentifier: "seeUsersList", sender: self)
         
     }
     

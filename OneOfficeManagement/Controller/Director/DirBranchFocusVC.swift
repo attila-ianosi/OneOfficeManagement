@@ -25,6 +25,12 @@ class DirBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDele
         
     }
     
+    @IBAction func addBranchInfo(_ sender: UIBarButtonItem) {
+        
+        performSegue(withIdentifier: "goToAddBranchInfo", sender: self)
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return DataService.instance.getBranchNews().count

@@ -22,10 +22,18 @@
 		0D5368D324461FBD00027840 /* BranchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D224461FBD00027840 /* BranchInfo.swift */; };
 		0D5368D5244620C100027840 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D4244620C100027840 /* DataService.swift */; };
 		0D5368D82446245900027840 /* BranchInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D72446245900027840 /* BranchInfoCell.swift */; };
+		0DA2E4742449EB700020860D /* CreateBranchInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */; };
+		0DA2E4782449FC3E0020860D /* ConfirmationMessageCreatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E4772449FC3E0020860D /* ConfirmationMessageCreatedVC.swift */; };
+		0DA2E47C244A0C950020860D /* ManagerMainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47B244A0C950020860D /* ManagerMainMenuVC.swift */; };
+		0DA2E47E244A1E740020860D /* SalesReportFigures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47D244A1E740020860D /* SalesReportFigures.swift */; };
+		0DA2E480244A1F470020860D /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47F244A1F470020860D /* MessageInfo.swift */; };
+		0DA2E482244A250B0020860D /* ReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E481244A250B0020860D /* ReportSalesVC.swift */; };
+		0DA2E484244A40670020860D /* ConfirmationReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */; };
 		0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */; };
 		0DDE54E424478AF300EC0B72 /* UserTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE54E324478AF300EC0B72 /* UserTable.swift */; };
 		0DDE54E62447A12300EC0B72 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE54E52447A12300EC0B72 /* RealmService.swift */; };
 		0DDE54E82447A88E00EC0B72 /* DirUserTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */; };
+		0DECC9712448E98500ACE902 /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DECC9702448E98500ACE902 /* UserListCell.swift */; };
 		15F0BBBE368480E0AD52B639 /* Pods_OneOfficeManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F14D0B7D654A036E01EF20 /* Pods_OneOfficeManagement.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,10 +55,18 @@
 		0D5368D224461FBD00027840 /* BranchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfo.swift; sourceTree = "<group>"; };
 		0D5368D4244620C100027840 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0D5368D72446245900027840 /* BranchInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfoCell.swift; sourceTree = "<group>"; };
+		0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBranchInfoVC.swift; sourceTree = "<group>"; };
+		0DA2E4772449FC3E0020860D /* ConfirmationMessageCreatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationMessageCreatedVC.swift; sourceTree = "<group>"; };
+		0DA2E47B244A0C950020860D /* ManagerMainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerMainMenuVC.swift; sourceTree = "<group>"; };
+		0DA2E47D244A1E740020860D /* SalesReportFigures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesReportFigures.swift; sourceTree = "<group>"; };
+		0DA2E47F244A1F470020860D /* MessageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
+		0DA2E481244A250B0020860D /* ReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportSalesVC.swift; sourceTree = "<group>"; };
+		0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationReportSalesVC.swift; sourceTree = "<group>"; };
 		0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationUserCreatedVC.swift; sourceTree = "<group>"; };
 		0DDE54E324478AF300EC0B72 /* UserTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTable.swift; sourceTree = "<group>"; };
 		0DDE54E52447A12300EC0B72 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirUserTypeVC.swift; sourceTree = "<group>"; };
+		0DECC9702448E98500ACE902 /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
 		353F3FB31E97261DE727CB15 /* Pods-OneOfficeManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneOfficeManagement.release.xcconfig"; path = "Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement.release.xcconfig"; sourceTree = "<group>"; };
 		EF210F085305AA4B3FFCE763 /* Pods-OneOfficeManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneOfficeManagement.debug.xcconfig"; path = "Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		F1F14D0B7D654A036E01EF20 /* Pods_OneOfficeManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneOfficeManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +126,8 @@
 			children = (
 				0D5368D224461FBD00027840 /* BranchInfo.swift */,
 				0DDE54E324478AF300EC0B72 /* UserTable.swift */,
+				0DA2E47D244A1E740020860D /* SalesReportFigures.swift */,
+				0DA2E47F244A1F470020860D /* MessageInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				0D5368D72446245900027840 /* BranchInfoCell.swift */,
+				0DECC9702448E98500ACE902 /* UserListCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,13 +144,10 @@
 		0D5368C72445ED0B00027840 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0D5368C8244602CB00027840 /* DirectorMainMenuVC.swift */,
-				0D5368CA244616DF00027840 /* DirBranchFocusVC.swift */,
-				0D5368CC2446181200027840 /* DirSalesHistoryVC.swift */,
-				0D5368CE2446183900027840 /* DirCreateUserVC.swift */,
-				0D5368D02446187400027840 /* DirUserListVC.swift */,
-				0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */,
-				0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */,
+				0DA2E47A244A0C780020860D /* Manager */,
+				0DA2E479244A0C320020860D /* Director */,
+				0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */,
+				0DA2E4772449FC3E0020860D /* ConfirmationMessageCreatedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -143,6 +159,30 @@
 				0DDE54E52447A12300EC0B72 /* RealmService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		0DA2E479244A0C320020860D /* Director */ = {
+			isa = PBXGroup;
+			children = (
+				0D5368C8244602CB00027840 /* DirectorMainMenuVC.swift */,
+				0D5368CA244616DF00027840 /* DirBranchFocusVC.swift */,
+				0D5368CC2446181200027840 /* DirSalesHistoryVC.swift */,
+				0D5368CE2446183900027840 /* DirCreateUserVC.swift */,
+				0D5368D02446187400027840 /* DirUserListVC.swift */,
+				0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */,
+				0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */,
+			);
+			path = Director;
+			sourceTree = "<group>";
+		};
+		0DA2E47A244A0C780020860D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0DA2E47B244A0C950020860D /* ManagerMainMenuVC.swift */,
+				0DA2E481244A250B0020860D /* ReportSalesVC.swift */,
+				0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		17AB17FD669F701E6259C0AE /* Pods */ = {
@@ -277,15 +317,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA2E4742449EB700020860D /* CreateBranchInfoVC.swift in Sources */,
 				0DDE54E82447A88E00EC0B72 /* DirUserTypeVC.swift in Sources */,
 				0D5368C9244602CB00027840 /* DirectorMainMenuVC.swift in Sources */,
 				0D5368D12446187400027840 /* DirUserListVC.swift in Sources */,
 				0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */,
+				0DA2E47E244A1E740020860D /* SalesReportFigures.swift in Sources */,
+				0DA2E47C244A0C950020860D /* ManagerMainMenuVC.swift in Sources */,
 				0D5368B22445ECA900027840 /* LoginScreenVC.swift in Sources */,
+				0DA2E484244A40670020860D /* ConfirmationReportSalesVC.swift in Sources */,
+				0DA2E482244A250B0020860D /* ReportSalesVC.swift in Sources */,
+				0DECC9712448E98500ACE902 /* UserListCell.swift in Sources */,
+				0DA2E480244A1F470020860D /* MessageInfo.swift in Sources */,
 				0D5368AE2445ECA900027840 /* AppDelegate.swift in Sources */,
 				0D5368B82445ECA900027840 /* OneOfficeManagement.xcdatamodeld in Sources */,
 				0D5368D5244620C100027840 /* DataService.swift in Sources */,
 				0D5368D82446245900027840 /* BranchInfoCell.swift in Sources */,
+				0DA2E4782449FC3E0020860D /* ConfirmationMessageCreatedVC.swift in Sources */,
 				0D5368D324461FBD00027840 /* BranchInfo.swift in Sources */,
 				0D5368CD2446181200027840 /* DirSalesHistoryVC.swift in Sources */,
 				0DDE54E62447A12300EC0B72 /* RealmService.swift in Sources */,

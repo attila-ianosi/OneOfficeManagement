@@ -10,7 +10,9 @@ import UIKit
 import RealmSwift
 
 class DirCreateUserVC: UIViewController {
-
+   
+    
+   
     var userName = ""
     var user: Results<User>!
     
@@ -60,7 +62,7 @@ class DirCreateUserVC: UIViewController {
     override func viewDidLoad() {
       super.viewDidLoad()
     
-       // print(Realm.Configuration.defaultConfiguration.fileURL!)
+       //print(Realm.Configuration.defaultConfiguration.fileURL!)
         let realm = RealmService.shared.realm
              user = realm.objects(User.self)
                     
@@ -70,15 +72,18 @@ class DirCreateUserVC: UIViewController {
     @IBAction func createUserButton(_ sender: UIButton) {
         
      let newUser = User(titleM: titleEmployee.text!, firstName: firstName.text!, middleName: middleName.text!, lastName: lastName.text!, email: email.text!, dateOfBirth: dateOfBirth.text!, telephone: telephone.text!, password: password.text!, address: address.text!, postcode:   postcode.text!, startDate: startDate.text!, endDate: endDate.text!)
-        RealmService.shared.create(newUser)
         
+        RealmService.shared.create(newUser)
+    
         self.userName = firstName.text!
         
         performSegue(withIdentifier: "goToConfirmationUser", sender: self)
     }
     
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var vc = segue.destination as! ConfirmationUserCreatedVC
+        let vc = segue.destination as! ConfirmationUserCreatedVC
         vc.finalUserName = self.userName
     }
 

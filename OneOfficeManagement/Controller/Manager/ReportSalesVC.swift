@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class ReportSalesVC: UIViewController {
+class ReportSalesVC: UIViewController, UITextFieldDelegate {
     
     var dateReport = ""
     
@@ -47,7 +47,21 @@ class ReportSalesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+              //Keyboard Texfield Delegates
+               self.reportDate.delegate = self
+               self.specialDelivery.delegate = self
+               self.internationalPost.delegate = self
+               self.parcelForce.delegate = self
+               self.globalExpress.delegate = self
+               self.moneyGram.delegate = self
+               self.firstClass.delegate = self
+               self.secondClass.delegate = self
+               self.royalMailSignedFor.delegate = self
+               self.travelMoneyCard.delegate = self
+               self.travelInsurance.delegate = self
+              
+              // Realm Database Initialization
               let realm = RealmService.shared.realm
               salesFigures = realm.objects(Figure.self)
         
@@ -69,6 +83,16 @@ class ReportSalesVC: UIViewController {
               let vc = segue.destination as! ConfirmationReportSalesVC
               vc.finalDate = self.dateReport
           }
+    
+    //Hides Keyboard when user touches outside
+      override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+          self.view.endEditing(true)
+      }
+      //Hide Keyboard when user touches RETURN key
+      func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+          textField.resignFirstResponder()
+          return(true)
+      }
     
 
 }

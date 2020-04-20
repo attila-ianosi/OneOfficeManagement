@@ -9,31 +9,21 @@
 import UIKit
 import RealmSwift
 
+let realm = RealmService.shared.realm
+var user : Results<User>!
+
 class DirUserListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
  
-     let realm = RealmService.shared.realm
-     
-     var user : Results<User>!
-    
-//    var selectedUser: User {
-//        didSet{
-//            user = realm.objects(User.self)
-//            userListTableView.reloadData()
-//        }
-//    }
-
 
     @IBOutlet weak var userListTableView: UITableView!
-    
-   
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-     
-     user = realm.objects(User.self)
-     userListTableView.reloadData()
+        userListTableView.dataSource = self
+        userListTableView.delegate = self
+        user = realm.objects(User.self)
+        userListTableView.reloadData()
         
     }
     
@@ -47,26 +37,35 @@ class DirUserListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserListCell", for: indexPath)
         if let item = user?[indexPath.row]{
-            cell.textLabel?.text = item.firstName
+            cell.textLabel?.text = item.firstName + " " + item.lastName
         } else{
             cell.textLabel?.text = "No user Added"
         }
         return cell
         
-//        if let cell = tableView.dequeueReusableCell(withIdentifier: "UserListCell") as? UserListCell{
-//
-//            let userShowed = user[indexPath.row]
-//            cell.updateUser(user: userShowed)
-//
-//                   return cell
-//               } else {
-//                   return BranchInfoCell()
-//               }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let userPicked = user[indexPath.row]
+    
+        performSegue(withIdentifier: "goToUserDetails", sender: userPicked)
+        
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+                RealmService.shared.delete(user[indexPath.row])
+        }
+        
+        userListTableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         //  let vc = segue.destination as! DirCreateUserVC
+       // vc.firstName = user[IndexPath.row].firstName
+       }
        
    }
      

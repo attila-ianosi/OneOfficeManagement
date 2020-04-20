@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class DirCreateUserVC: UIViewController {
+class DirCreateUserVC: UIViewController, UITextFieldDelegate {
    
     
    
@@ -61,15 +61,31 @@ class DirCreateUserVC: UIViewController {
     
     override func viewDidLoad() {
       super.viewDidLoad()
-    
+        // Delegate for UITextfields
+        self.titleEmployee.delegate = self
+        self.firstName.delegate = self
+        self.middleName.delegate = self
+        self.lastName.delegate = self
+        self.email.delegate = self
+        self.dateOfBirth.delegate = self
+        self.telephone.delegate = self
+        self.password.delegate = self
+        self.address.delegate = self
+        self.postcode.delegate = self
+        self.city.delegate = self
+        self.startDate.delegate = self
+        self.endDate.delegate = self
+      
        //print(Realm.Configuration.defaultConfiguration.fileURL!)
-        let realm = RealmService.shared.realm
+             let realm = RealmService.shared.realm
              user = realm.objects(User.self)
                     
     }
     
     
     @IBAction func createUserButton(_ sender: UIButton) {
+        
+      
         
      let newUser = User(titleM: titleEmployee.text!, firstName: firstName.text!, middleName: middleName.text!, lastName: lastName.text!, email: email.text!, dateOfBirth: dateOfBirth.text!, telephone: telephone.text!, password: password.text!, address: address.text!, postcode:   postcode.text!, startDate: startDate.text!, endDate: endDate.text!)
         
@@ -86,6 +102,17 @@ class DirCreateUserVC: UIViewController {
         let vc = segue.destination as! ConfirmationUserCreatedVC
         vc.finalUserName = self.userName
     }
+    //Hides Keyboard when user touches outside
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    //Hide Keyboard when user touches RETURN key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
 
 }
 

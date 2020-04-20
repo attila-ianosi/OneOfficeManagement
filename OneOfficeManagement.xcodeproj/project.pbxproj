@@ -30,6 +30,8 @@
 		0DA2E482244A250B0020860D /* ReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E481244A250B0020860D /* ReportSalesVC.swift */; };
 		0DA2E484244A40670020860D /* ConfirmationReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */; };
 		0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */; };
+		0DDDA180244A816600BBD735 /* HolidayBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDDA17F244A816600BBD735 /* HolidayBookingVC.swift */; };
+		0DDDA182244B8B9A00BBD735 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDDA181244B8B9A00BBD735 /* Holiday.swift */; };
 		0DDE54E424478AF300EC0B72 /* UserTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE54E324478AF300EC0B72 /* UserTable.swift */; };
 		0DDE54E62447A12300EC0B72 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE54E52447A12300EC0B72 /* RealmService.swift */; };
 		0DDE54E82447A88E00EC0B72 /* DirUserTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */; };
@@ -63,6 +65,8 @@
 		0DA2E481244A250B0020860D /* ReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportSalesVC.swift; sourceTree = "<group>"; };
 		0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationReportSalesVC.swift; sourceTree = "<group>"; };
 		0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationUserCreatedVC.swift; sourceTree = "<group>"; };
+		0DDDA17F244A816600BBD735 /* HolidayBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayBookingVC.swift; sourceTree = "<group>"; };
+		0DDDA181244B8B9A00BBD735 /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
 		0DDE54E324478AF300EC0B72 /* UserTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTable.swift; sourceTree = "<group>"; };
 		0DDE54E52447A12300EC0B72 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirUserTypeVC.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				0DDE54E324478AF300EC0B72 /* UserTable.swift */,
 				0DA2E47D244A1E740020860D /* SalesReportFigures.swift */,
 				0DA2E47F244A1F470020860D /* MessageInfo.swift */,
+				0DDDA181244B8B9A00BBD735 /* Holiday.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 		0D5368C72445ED0B00027840 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0DDDA176244A78A000BBD735 /* Employee */,
 				0DA2E47A244A0C780020860D /* Manager */,
 				0DA2E479244A0C320020860D /* Director */,
 				0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */,
@@ -183,6 +189,14 @@
 				0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		0DDDA176244A78A000BBD735 /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				0DDDA17F244A816600BBD735 /* HolidayBookingVC.swift */,
+			);
+			path = Employee;
 			sourceTree = "<group>";
 		};
 		17AB17FD669F701E6259C0AE /* Pods */ = {
@@ -323,6 +337,7 @@
 				0D5368D12446187400027840 /* DirUserListVC.swift in Sources */,
 				0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */,
 				0DA2E47E244A1E740020860D /* SalesReportFigures.swift in Sources */,
+				0DDDA180244A816600BBD735 /* HolidayBookingVC.swift in Sources */,
 				0DA2E47C244A0C950020860D /* ManagerMainMenuVC.swift in Sources */,
 				0D5368B22445ECA900027840 /* LoginScreenVC.swift in Sources */,
 				0DA2E484244A40670020860D /* ConfirmationReportSalesVC.swift in Sources */,
@@ -340,6 +355,7 @@
 				0DDE54E424478AF300EC0B72 /* UserTable.swift in Sources */,
 				0D5368B02445ECA900027840 /* SceneDelegate.swift in Sources */,
 				0D5368CB244616DF00027840 /* DirBranchFocusVC.swift in Sources */,
+				0DDDA182244B8B9A00BBD735 /* Holiday.swift in Sources */,
 				0D5368CF2446183900027840 /* DirCreateUserVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class CreateBranchInfoVC: UIViewController {
+class CreateBranchInfoVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     var messageSubject = ""
     
@@ -30,8 +30,11 @@ class CreateBranchInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      //  print(Realm.Configuration.defaultConfiguration.fileURL!)
+        //Delegate for UITextfield
+        self.subjectLabelBranchInfo.delegate = self
+        self.messageBodyTxt.delegate = self
         
+      //  print(Realm.Configuration.defaultConfiguration.fileURL!)
         let realm = RealmService.shared.realm
         messages = realm.objects(Message.self)
         
@@ -56,6 +59,16 @@ class CreateBranchInfoVC: UIViewController {
             let vc = segue.destination as! ConfirmationMessageCreatedVC
             vc.finalMessage = self.messageSubject
         }
+    
+    //Hides Keyboard when user touches outside
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    //Hide Keyboard when user touches RETURN key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return(true)
+    }
 
     }
 

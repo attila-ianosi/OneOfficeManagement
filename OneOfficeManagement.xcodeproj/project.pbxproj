@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1B0C49244F59E400A6F34C /* OpenMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B0C48244F59E400A6F34C /* OpenMessageVC.swift */; };
 		0D5368AE2445ECA900027840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368AD2445ECA900027840 /* AppDelegate.swift */; };
 		0D5368B02445ECA900027840 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368AF2445ECA900027840 /* SceneDelegate.swift */; };
 		0D5368B22445ECA900027840 /* LoginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368B12445ECA900027840 /* LoginScreenVC.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D1B0C48244F59E400A6F34C /* OpenMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMessageVC.swift; sourceTree = "<group>"; };
 		0D5368AA2445ECA900027840 /* OneOfficeManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneOfficeManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5368AD2445ECA900027840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5368AF2445ECA900027840 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				0D5368D02446187400027840 /* DirUserListVC.swift */,
 				0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */,
 				0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */,
+				0D1B0C48244F59E400A6F34C /* OpenMessageVC.swift */,
 			);
 			path = Director;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				0D5368D12446187400027840 /* DirUserListVC.swift in Sources */,
 				0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */,
 				0DA2E47E244A1E740020860D /* SalesReportFigures.swift in Sources */,
+				0D1B0C49244F59E400A6F34C /* OpenMessageVC.swift in Sources */,
 				0DDDA180244A816600BBD735 /* HolidayBookingVC.swift in Sources */,
 				0DA2E47C244A0C950020860D /* ManagerMainMenuVC.swift in Sources */,
 				0D5368B22445ECA900027840 /* LoginScreenVC.swift in Sources */,

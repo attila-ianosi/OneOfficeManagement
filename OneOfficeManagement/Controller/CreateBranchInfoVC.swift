@@ -21,10 +21,15 @@ class CreateBranchInfoVC: UIViewController, UITextFieldDelegate, UITextViewDeleg
     
     @IBOutlet weak var messageBodyTxt: UITextView!
     
+    @IBOutlet weak var dateOfMessage: UITextField!
+    
+    
+    
     func configure(with messages: Message){
         
         subjectLabelBranchInfo.text = messages.subjectInfo
         messageBodyTxt.text = messages.messageInfo
+        dateOfMessage.text = messages.dateOfMessage
     }
     
     override func viewDidLoad() {
@@ -34,7 +39,7 @@ class CreateBranchInfoVC: UIViewController, UITextFieldDelegate, UITextViewDeleg
         self.subjectLabelBranchInfo.delegate = self
         self.messageBodyTxt.delegate = self
         
-      //  print(Realm.Configuration.defaultConfiguration.fileURL!)
+      print(Realm.Configuration.defaultConfiguration.fileURL!)
         let realm = RealmService.shared.realm
         messages = realm.objects(Message.self)
         
@@ -44,7 +49,7 @@ class CreateBranchInfoVC: UIViewController, UITextFieldDelegate, UITextViewDeleg
 
     @IBAction func submitInfoPressed(_ sender: UIButton) {
         
-        let newMessage = Message(subjectInfo: subjectLabelBranchInfo.text!, messageInfo: messageBodyTxt.text!)
+        let newMessage = Message(subjectInfo: subjectLabelBranchInfo.text!, messageInfo: messageBodyTxt.text!, dateOfMessage: dateOfMessage.text!)
         
         RealmService.shared.create(newMessage)
         

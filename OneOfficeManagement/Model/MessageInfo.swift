@@ -14,14 +14,15 @@ import RealmSwift
     
     dynamic var subjectInfo: String = ""
     dynamic var messageInfo: String = ""
+    dynamic var dateOfMessage: String = ""
    
     
-    convenience init(subjectInfo: String, messageInfo: String) {
+    convenience init(subjectInfo: String, messageInfo: String, dateOfMessage: String) {
         
         self.init()
         self.subjectInfo = subjectInfo
         self.messageInfo = messageInfo
-    
+        self.dateOfMessage = dateOfMessage
         
     }
     

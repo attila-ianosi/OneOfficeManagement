@@ -13,12 +13,15 @@ class BranchInfoCell: UITableViewCell {
 
    @IBOutlet weak var subjectTitle: UILabel!
      @IBOutlet weak var managerName: UILabel!
-     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dateLabel: UITextField!
+    @IBOutlet weak var contentMessage: UILabel!
+    
     
     func updateNews(infoNews: BranchInfo ) {
         subjectTitle.text = infoNews.subject
         managerName.text = infoNews.manager
-        dateLabel.text = infoNews.infoDate
+       dateLabel.text = infoNews.infoDate
+        contentMessage.text = infoNews.contentOfMessage
       
         
     }

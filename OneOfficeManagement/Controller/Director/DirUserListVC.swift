@@ -47,9 +47,9 @@ class DirUserListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let userPicked = user[indexPath.row]
+      //  let userPicked = user[indexPath.row]
     
-        performSegue(withIdentifier: "goToUserDetails", sender: userPicked)
+       // performSegue(withIdentifier: "goToUserDetails", sender: userPicked)
         
     }
     

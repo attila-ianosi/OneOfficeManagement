@@ -18,7 +18,7 @@ class ManagerMainMenuVC: UIViewController {
     
     @IBAction func managerBranchFocusBtn(_ sender: UIButton) {
         
-       performSegue(withIdentifier: "goToBranchFocusManager", sender: self)
+       performSegue(withIdentifier: "managerGoToBranchFocus", sender: self)
     }
     
     @IBAction func managerReportSalesBtn(_ sender: UIButton) {

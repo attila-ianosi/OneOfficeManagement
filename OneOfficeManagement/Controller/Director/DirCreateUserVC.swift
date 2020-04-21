@@ -76,7 +76,7 @@ class DirCreateUserVC: UIViewController, UITextFieldDelegate {
 //        self.startDate.delegate = self
 //        self.endDate.delegate = self
       
-       print(Realm.Configuration.defaultConfiguration.fileURL!)
+    //   print(Realm.Configuration.defaultConfiguration.fileURL!)
              let realm = RealmService.shared.realm
              user = realm.objects(User.self)
                     

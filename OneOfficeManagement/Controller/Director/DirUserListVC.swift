@@ -9,11 +9,12 @@
 import UIKit
 import RealmSwift
 
-let realm = RealmService.shared.realm
-var user : Results<User>!
+
 
 class DirUserListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
  
+    let realm = RealmService.shared.realm
+    var user : Results<User>!
 
     @IBOutlet weak var userListTableView: UITableView!
     

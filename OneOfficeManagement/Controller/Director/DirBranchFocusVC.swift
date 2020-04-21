@@ -66,6 +66,8 @@ class DirBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDele
 
     }
     
+   
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
               let indexPath = tableView.indexPathForSelectedRow
                let currentCell = tableView.cellForRow(at: indexPath!)! as! BranchInfoCell
@@ -86,7 +88,14 @@ class DirBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDele
                viewController.finalMessageSubject = bodyMessage
                
            }
+        
+        func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+                 if editingStyle == .delete {
+                     
+                         RealmService.shared.delete(messages[indexPath.row])
+                 }
 
-}
+       }
 
+  }
 }

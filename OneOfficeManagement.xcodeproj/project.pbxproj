@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0D1B0C49244F59E400A6F34C /* OpenMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B0C48244F59E400A6F34C /* OpenMessageVC.swift */; };
+		0D1B0C4B244F6FB800A6F34C /* SeeReportsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B0C4A244F6FB800A6F34C /* SeeReportsVC.swift */; };
+		0D1B0C4D244F715A00A6F34C /* SalesFigureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B0C4C244F715A00A6F34C /* SalesFigureCell.swift */; };
 		0D5368AE2445ECA900027840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368AD2445ECA900027840 /* AppDelegate.swift */; };
 		0D5368B02445ECA900027840 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368AF2445ECA900027840 /* SceneDelegate.swift */; };
 		0D5368B22445ECA900027840 /* LoginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368B12445ECA900027840 /* LoginScreenVC.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		0D1B0C48244F59E400A6F34C /* OpenMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMessageVC.swift; sourceTree = "<group>"; };
+		0D1B0C4A244F6FB800A6F34C /* SeeReportsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeReportsVC.swift; sourceTree = "<group>"; };
+		0D1B0C4C244F715A00A6F34C /* SalesFigureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesFigureCell.swift; sourceTree = "<group>"; };
 		0D5368AA2445ECA900027840 /* OneOfficeManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneOfficeManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5368AD2445ECA900027840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5368AF2445ECA900027840 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 			children = (
 				0D5368D72446245900027840 /* BranchInfoCell.swift */,
 				0DECC9702448E98500ACE902 /* UserListCell.swift */,
+				0D1B0C4C244F715A00A6F34C /* SalesFigureCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				0DA2E47B244A0C950020860D /* ManagerMainMenuVC.swift */,
 				0DA2E481244A250B0020860D /* ReportSalesVC.swift */,
 				0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */,
+				0D1B0C4A244F6FB800A6F34C /* SeeReportsVC.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -336,9 +342,11 @@
 			files = (
 				0DA2E4742449EB700020860D /* CreateBranchInfoVC.swift in Sources */,
 				0DDE54E82447A88E00EC0B72 /* DirUserTypeVC.swift in Sources */,
+				0D1B0C4B244F6FB800A6F34C /* SeeReportsVC.swift in Sources */,
 				0D5368C9244602CB00027840 /* DirectorMainMenuVC.swift in Sources */,
 				0D5368D12446187400027840 /* DirUserListVC.swift in Sources */,
 				0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */,
+				0D1B0C4D244F715A00A6F34C /* SalesFigureCell.swift in Sources */,
 				0DA2E47E244A1E740020860D /* SalesReportFigures.swift in Sources */,
 				0D1B0C49244F59E400A6F34C /* OpenMessageVC.swift in Sources */,
 				0DDDA180244A816600BBD735 /* HolidayBookingVC.swift in Sources */,

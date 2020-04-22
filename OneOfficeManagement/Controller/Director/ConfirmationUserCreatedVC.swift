@@ -19,7 +19,7 @@ class ConfirmationUserCreatedVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        confirmationLabel.text = "User \(finalUserName) has been created"
+        confirmationLabel.text = "\(finalUserName)"
        
     }
     

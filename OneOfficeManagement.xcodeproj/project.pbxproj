@@ -28,7 +28,7 @@
 		0DA2E4742449EB700020860D /* CreateBranchInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */; };
 		0DA2E4782449FC3E0020860D /* ConfirmationMessageCreatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E4772449FC3E0020860D /* ConfirmationMessageCreatedVC.swift */; };
 		0DA2E47C244A0C950020860D /* ManagerMainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47B244A0C950020860D /* ManagerMainMenuVC.swift */; };
-		0DA2E47E244A1E740020860D /* SalesReportFigures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47D244A1E740020860D /* SalesReportFigures.swift */; };
+		0DA2E47E244A1E740020860D /* Figure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47D244A1E740020860D /* Figure.swift */; };
 		0DA2E480244A1F470020860D /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47F244A1F470020860D /* MessageInfo.swift */; };
 		0DA2E482244A250B0020860D /* ReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E481244A250B0020860D /* ReportSalesVC.swift */; };
 		0DA2E484244A40670020860D /* ConfirmationReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */; };
@@ -66,7 +66,7 @@
 		0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBranchInfoVC.swift; sourceTree = "<group>"; };
 		0DA2E4772449FC3E0020860D /* ConfirmationMessageCreatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationMessageCreatedVC.swift; sourceTree = "<group>"; };
 		0DA2E47B244A0C950020860D /* ManagerMainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerMainMenuVC.swift; sourceTree = "<group>"; };
-		0DA2E47D244A1E740020860D /* SalesReportFigures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesReportFigures.swift; sourceTree = "<group>"; };
+		0DA2E47D244A1E740020860D /* Figure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figure.swift; sourceTree = "<group>"; };
 		0DA2E47F244A1F470020860D /* MessageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
 		0DA2E481244A250B0020860D /* ReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportSalesVC.swift; sourceTree = "<group>"; };
 		0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationReportSalesVC.swift; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 			children = (
 				0D5368D224461FBD00027840 /* BranchInfo.swift */,
 				0DDE54E324478AF300EC0B72 /* UserTable.swift */,
-				0DA2E47D244A1E740020860D /* SalesReportFigures.swift */,
+				0DA2E47D244A1E740020860D /* Figure.swift */,
 				0DA2E47F244A1F470020860D /* MessageInfo.swift */,
 				0DDDA181244B8B9A00BBD735 /* Holiday.swift */,
 			);
@@ -347,7 +347,7 @@
 				0D5368D12446187400027840 /* DirUserListVC.swift in Sources */,
 				0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */,
 				0D1B0C4D244F715A00A6F34C /* SalesFigureCell.swift in Sources */,
-				0DA2E47E244A1E740020860D /* SalesReportFigures.swift in Sources */,
+				0DA2E47E244A1E740020860D /* Figure.swift in Sources */,
 				0D1B0C49244F59E400A6F34C /* OpenMessageVC.swift in Sources */,
 				0DDDA180244A816600BBD735 /* HolidayBookingVC.swift in Sources */,
 				0DA2E47C244A0C950020860D /* ManagerMainMenuVC.swift in Sources */,

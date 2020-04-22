@@ -20,7 +20,7 @@ class ConfirmationMessageCreatedVC: UIViewController {
         
        
 
-        confirmationLabelMessage.text = " Branch Info with the subject \(finalMessage) has been posted"
+        confirmationLabelMessage.text = "\(finalMessage)"
         
         
     }

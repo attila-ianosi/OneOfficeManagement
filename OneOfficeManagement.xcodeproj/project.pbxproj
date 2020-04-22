@@ -8,12 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0D1B0C49244F59E400A6F34C /* OpenMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B0C48244F59E400A6F34C /* OpenMessageVC.swift */; };
-		0D1B0C4B244F6FB800A6F34C /* SeeReportsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B0C4A244F6FB800A6F34C /* SeeReportsVC.swift */; };
 		0D1B0C4D244F715A00A6F34C /* SalesFigureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B0C4C244F715A00A6F34C /* SalesFigureCell.swift */; };
 		0D5368AE2445ECA900027840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368AD2445ECA900027840 /* AppDelegate.swift */; };
 		0D5368B02445ECA900027840 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368AF2445ECA900027840 /* SceneDelegate.swift */; };
 		0D5368B22445ECA900027840 /* LoginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368B12445ECA900027840 /* LoginScreenVC.swift */; };
-		0D5368B52445ECA900027840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5368B32445ECA900027840 /* Main.storyboard */; };
 		0D5368B82445ECA900027840 /* OneOfficeManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368B62445ECA900027840 /* OneOfficeManagement.xcdatamodeld */; };
 		0D5368BA2445ECAB00027840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5368B92445ECAB00027840 /* Assets.xcassets */; };
 		0D5368BD2445ECAB00027840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5368BB2445ECAB00027840 /* LaunchScreen.storyboard */; };
@@ -25,6 +23,7 @@
 		0D5368D324461FBD00027840 /* BranchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D224461FBD00027840 /* BranchInfo.swift */; };
 		0D5368D5244620C100027840 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D4244620C100027840 /* DataService.swift */; };
 		0D5368D82446245900027840 /* BranchInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D72446245900027840 /* BranchInfoCell.swift */; };
+		0D777A202450B0E300EEB9A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D777A1F2450B0E300EEB9A5 /* GoogleService-Info.plist */; };
 		0DA2E4742449EB700020860D /* CreateBranchInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */; };
 		0DA2E4782449FC3E0020860D /* ConfirmationMessageCreatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E4772449FC3E0020860D /* ConfirmationMessageCreatedVC.swift */; };
 		0DA2E47C244A0C950020860D /* ManagerMainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47B244A0C950020860D /* ManagerMainMenuVC.swift */; };
@@ -32,6 +31,8 @@
 		0DA2E480244A1F470020860D /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47F244A1F470020860D /* MessageInfo.swift */; };
 		0DA2E482244A250B0020860D /* ReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E481244A250B0020860D /* ReportSalesVC.swift */; };
 		0DA2E484244A40670020860D /* ConfirmationReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */; };
+		0DCA35932450B2CB00A85988 /* SeeReportsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA35922450B2CA00A85988 /* SeeReportsVC.swift */; };
+		0DCA35952450C6E300A85988 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCA35942450C6E300A85988 /* Main.storyboard */; };
 		0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */; };
 		0DDDA180244A816600BBD735 /* HolidayBookingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDDA17F244A816600BBD735 /* HolidayBookingVC.swift */; };
 		0DDDA182244B8B9A00BBD735 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDDA181244B8B9A00BBD735 /* Holiday.swift */; };
@@ -39,18 +40,16 @@
 		0DDE54E62447A12300EC0B72 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE54E52447A12300EC0B72 /* RealmService.swift */; };
 		0DDE54E82447A88E00EC0B72 /* DirUserTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */; };
 		0DECC9712448E98500ACE902 /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DECC9702448E98500ACE902 /* UserListCell.swift */; };
-		15F0BBBE368480E0AD52B639 /* Pods_OneOfficeManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F14D0B7D654A036E01EF20 /* Pods_OneOfficeManagement.framework */; };
+		B2A05039AC2A2DDEDBEE24EB /* Pods_OneOfficeManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A93270F52618A3393540708 /* Pods_OneOfficeManagement.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D1B0C48244F59E400A6F34C /* OpenMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMessageVC.swift; sourceTree = "<group>"; };
-		0D1B0C4A244F6FB800A6F34C /* SeeReportsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeReportsVC.swift; sourceTree = "<group>"; };
 		0D1B0C4C244F715A00A6F34C /* SalesFigureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesFigureCell.swift; sourceTree = "<group>"; };
 		0D5368AA2445ECA900027840 /* OneOfficeManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneOfficeManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5368AD2445ECA900027840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5368AF2445ECA900027840 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0D5368B12445ECA900027840 /* LoginScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenVC.swift; sourceTree = "<group>"; };
-		0D5368B42445ECA900027840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D5368B72445ECA900027840 /* OneOfficeManagement.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OneOfficeManagement.xcdatamodel; sourceTree = "<group>"; };
 		0D5368B92445ECAB00027840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D5368BC2445ECAB00027840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		0D5368D224461FBD00027840 /* BranchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfo.swift; sourceTree = "<group>"; };
 		0D5368D4244620C100027840 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0D5368D72446245900027840 /* BranchInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfoCell.swift; sourceTree = "<group>"; };
+		0D777A1F2450B0E300EEB9A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBranchInfoVC.swift; sourceTree = "<group>"; };
 		0DA2E4772449FC3E0020860D /* ConfirmationMessageCreatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationMessageCreatedVC.swift; sourceTree = "<group>"; };
 		0DA2E47B244A0C950020860D /* ManagerMainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerMainMenuVC.swift; sourceTree = "<group>"; };
@@ -70,6 +70,8 @@
 		0DA2E47F244A1F470020860D /* MessageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
 		0DA2E481244A250B0020860D /* ReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportSalesVC.swift; sourceTree = "<group>"; };
 		0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationReportSalesVC.swift; sourceTree = "<group>"; };
+		0DCA35922450B2CA00A85988 /* SeeReportsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeReportsVC.swift; sourceTree = "<group>"; };
+		0DCA35942450C6E300A85988 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationUserCreatedVC.swift; sourceTree = "<group>"; };
 		0DDDA17F244A816600BBD735 /* HolidayBookingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayBookingVC.swift; sourceTree = "<group>"; };
 		0DDDA181244B8B9A00BBD735 /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
@@ -77,9 +79,9 @@
 		0DDE54E52447A12300EC0B72 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirUserTypeVC.swift; sourceTree = "<group>"; };
 		0DECC9702448E98500ACE902 /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
-		353F3FB31E97261DE727CB15 /* Pods-OneOfficeManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneOfficeManagement.release.xcconfig"; path = "Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement.release.xcconfig"; sourceTree = "<group>"; };
-		EF210F085305AA4B3FFCE763 /* Pods-OneOfficeManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneOfficeManagement.debug.xcconfig"; path = "Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement.debug.xcconfig"; sourceTree = "<group>"; };
-		F1F14D0B7D654A036E01EF20 /* Pods_OneOfficeManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneOfficeManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		212C3C6E89269F5F699B6CA9 /* Pods-OneOfficeManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneOfficeManagement.debug.xcconfig"; path = "Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		6A93270F52618A3393540708 /* Pods_OneOfficeManagement.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneOfficeManagement.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C88DEA54DDDA8E897174C9 /* Pods-OneOfficeManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneOfficeManagement.release.xcconfig"; path = "Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15F0BBBE368480E0AD52B639 /* Pods_OneOfficeManagement.framework in Frameworks */,
+				B2A05039AC2A2DDEDBEE24EB /* Pods_OneOfficeManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +105,7 @@
 				0D5368AC2445ECA900027840 /* OneOfficeManagement */,
 				0D5368AB2445ECA900027840 /* Products */,
 				17AB17FD669F701E6259C0AE /* Pods */,
-				A66549BC9D0A215AF08771E0 /* Frameworks */,
+				964758E32465CC377C6E11AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,8 +125,9 @@
 				0D5368C62445ED0200027840 /* View */,
 				0D5368C72445ED0B00027840 /* Controller */,
 				0D5368B12445ECA900027840 /* LoginScreenVC.swift */,
-				0D5368B32445ECA900027840 /* Main.storyboard */,
+				0DCA35942450C6E300A85988 /* Main.storyboard */,
 				0D5368B92445ECAB00027840 /* Assets.xcassets */,
+				0D777A1F2450B0E300EEB9A5 /* GoogleService-Info.plist */,
 				0D5368BE2445ECAB00027840 /* Info.plist */,
 				0D5368B62445ECA900027840 /* OneOfficeManagement.xcdatamodeld */,
 			);
@@ -195,7 +198,7 @@
 				0DA2E47B244A0C950020860D /* ManagerMainMenuVC.swift */,
 				0DA2E481244A250B0020860D /* ReportSalesVC.swift */,
 				0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */,
-				0D1B0C4A244F6FB800A6F34C /* SeeReportsVC.swift */,
+				0DCA35922450B2CA00A85988 /* SeeReportsVC.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -211,16 +214,16 @@
 		17AB17FD669F701E6259C0AE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EF210F085305AA4B3FFCE763 /* Pods-OneOfficeManagement.debug.xcconfig */,
-				353F3FB31E97261DE727CB15 /* Pods-OneOfficeManagement.release.xcconfig */,
+				212C3C6E89269F5F699B6CA9 /* Pods-OneOfficeManagement.debug.xcconfig */,
+				D4C88DEA54DDDA8E897174C9 /* Pods-OneOfficeManagement.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A66549BC9D0A215AF08771E0 /* Frameworks */ = {
+		964758E32465CC377C6E11AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F1F14D0B7D654A036E01EF20 /* Pods_OneOfficeManagement.framework */,
+				6A93270F52618A3393540708 /* Pods_OneOfficeManagement.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,11 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D5368C12445ECAB00027840 /* Build configuration list for PBXNativeTarget "OneOfficeManagement" */;
 			buildPhases = (
-				C11CEA56849192C9AC50DF11 /* [CP] Check Pods Manifest.lock */,
+				E8A93547C71644EDF4EBA777 /* [CP] Check Pods Manifest.lock */,
 				0D5368A62445ECA900027840 /* Sources */,
 				0D5368A72445ECA900027840 /* Frameworks */,
 				0D5368A82445ECA900027840 /* Resources */,
-				2A9144712DC3193CBB06D866 /* [CP] Embed Pods Frameworks */,
+				3EF539A2A16D007988BE1494 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,15 +289,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5368BD2445ECAB00027840 /* LaunchScreen.storyboard in Resources */,
+				0D777A202450B0E300EEB9A5 /* GoogleService-Info.plist in Resources */,
 				0D5368BA2445ECAB00027840 /* Assets.xcassets in Resources */,
-				0D5368B52445ECA900027840 /* Main.storyboard in Resources */,
+				0DCA35952450C6E300A85988 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A9144712DC3193CBB06D866 /* [CP] Embed Pods Frameworks */ = {
+		3EF539A2A16D007988BE1494 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,7 +315,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneOfficeManagement/Pods-OneOfficeManagement-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C11CEA56849192C9AC50DF11 /* [CP] Check Pods Manifest.lock */ = {
+		E8A93547C71644EDF4EBA777 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,9 +344,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DCA35932450B2CB00A85988 /* SeeReportsVC.swift in Sources */,
 				0DA2E4742449EB700020860D /* CreateBranchInfoVC.swift in Sources */,
 				0DDE54E82447A88E00EC0B72 /* DirUserTypeVC.swift in Sources */,
-				0D1B0C4B244F6FB800A6F34C /* SeeReportsVC.swift in Sources */,
 				0D5368C9244602CB00027840 /* DirectorMainMenuVC.swift in Sources */,
 				0D5368D12446187400027840 /* DirUserListVC.swift in Sources */,
 				0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */,
@@ -375,14 +379,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0D5368B32445ECA900027840 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D5368B42445ECA900027840 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0D5368BB2445ECAB00027840 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -510,7 +506,7 @@
 		};
 		0D5368C22445ECAB00027840 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF210F085305AA4B3FFCE763 /* Pods-OneOfficeManagement.debug.xcconfig */;
+			baseConfigurationReference = 212C3C6E89269F5F699B6CA9 /* Pods-OneOfficeManagement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,7 +525,7 @@
 		};
 		0D5368C32445ECAB00027840 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 353F3FB31E97261DE727CB15 /* Pods-OneOfficeManagement.release.xcconfig */;
+			baseConfigurationReference = D4C88DEA54DDDA8E897174C9 /* Pods-OneOfficeManagement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

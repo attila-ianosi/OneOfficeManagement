@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>682294236492-gnllrecg4u1lsaoc0fg7p5nesar4shth.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.682294236492-gnllrecg4u1lsaoc0fg7p5nesar4shth</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD31-F0yJoki5sxWzUsmEmf5w6l9imko9A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>682294236492</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.attilaswift.OneOfficeManagement</string>
+	<key>PROJECT_ID</key>
+	<string>oneofficemanagement-3a0e3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>oneofficemanagement-3a0e3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:682294236492:ios:23437ad2b70962be0b6be9</string>
+	<key>DATABASE_URL</key>
+	<string>https://oneofficemanagement-3a0e3.firebaseio.com</string>
+</dict>
+</plist>

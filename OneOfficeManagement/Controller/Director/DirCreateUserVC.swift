@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import Firebase
 
 class DirCreateUserVC: UIViewController, UITextFieldDelegate {
    
@@ -92,6 +93,21 @@ class DirCreateUserVC: UIViewController, UITextFieldDelegate {
         RealmService.shared.create(newUser)
     
         self.userName = firstName.text!
+        
+        if let email2 = email.text, let password2 = password.text {
+            Auth.auth().createUser(withEmail: email2, password: password2) { authResult, error in
+                if let e = error {
+                    print(e)
+                } else {
+                    print("user created")
+                }
+                   
+            }
+        }
+        
+        
+        
+       
         
         performSegue(withIdentifier: "goToConfirmationUser", sender: self)
     }

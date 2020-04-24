@@ -18,7 +18,7 @@ class ConfirmationReportSalesVC: UIViewController {
         super.viewDidLoad()
 
     
-        confimationSalesReport.text = "Sales Report for \(finalDate) has been submitted"
+        confimationSalesReport.text = "\(finalDate)"
         
     }
     
@@ -26,7 +26,7 @@ class ConfirmationReportSalesVC: UIViewController {
 
     @IBAction func seeReportsBtnPressed(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "goToReportHistoryConfirmation", sender: self)
+        performSegue(withIdentifier: "goToReportsHistory", sender: self)
     }
     
     

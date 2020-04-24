@@ -12,6 +12,8 @@ import RealmSwift
 
 
 class DirUserListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+  
+    
  
     let realm = RealmService.shared.realm
     var user : Results<User>!
@@ -28,7 +30,12 @@ class DirUserListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         
     }
     
- func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    @IBAction func mainMenuPressed(_ sender: UIButton) {
+        
+     performSegue(withIdentifier: "goToMainMenuFromUserList", sender: self)
+        }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
          
     return user.count
      }
@@ -67,8 +74,9 @@ class DirUserListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
          //  let vc = segue.destination as! DirCreateUserVC
        // vc.firstName = user[IndexPath.row].firstName
        }
-       
-   }
+}
+   
+
      
 
 

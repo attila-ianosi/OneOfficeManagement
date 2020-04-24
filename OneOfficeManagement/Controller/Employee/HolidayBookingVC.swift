@@ -12,6 +12,9 @@ import RealmSwift
 
 class HolidayBookingVC: UIViewController, FSCalendarDelegate, UITextFieldDelegate, UITextViewDelegate {
     
+    var selectedLeaveDate = ""
+    var selectedReturnDate = ""
+    
     var holidays: Results<Holiday>!
     
     @IBOutlet var calendar: FSCalendar!
@@ -35,6 +38,7 @@ class HolidayBookingVC: UIViewController, FSCalendarDelegate, UITextFieldDelegat
         super.viewDidLoad()
        // Calendar initializa delegate
         calendar.delegate = self
+        
         //Delegate for UITextfield and textView
               self.leaveDateHoliday.delegate = self
               self.returnDateHoliday.delegate = self
@@ -47,19 +51,46 @@ class HolidayBookingVC: UIViewController, FSCalendarDelegate, UITextFieldDelegat
     }
     
     @IBAction func submitHolidayPressed(_ sender: UIButton) {
+        
+        
+        
         let newHoliday = Holiday(leaveDateHoliday: leaveDateHoliday.text!, returnDateHoliday: returnDateHoliday.text!, extraNotesHoliday: extraNotesforHoliday.text!)
                
                RealmService.shared.create(newHoliday)
         
+         selectedLeaveDate = leaveDateHoliday.text!
+        selectedReturnDate = returnDateHoliday.text!
+        
+       performSegue(withIdentifier: "goToHolidayRequestConfirmation", sender: self)
+        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! HolidayConfirmationVC
+        vc.leaveDateSelected = self.selectedLeaveDate
+        vc.returnDateSelected = self.selectedReturnDate
+    }
+    
+    
+    
     //Select a date function
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE MM-dd-YYYY"
+        formatter.dateFormat = "dd.MM.YYYY"
         let datePicked = formatter.string(from: date)
-        print("\(datePicked)")
         
+        leaveDateHoliday.text = datePicked
+    }
+    
+    //Hides Keyboard when user touches outside
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    //Hide Keyboard when user touches RETURN key
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return(true)
     }
 
 

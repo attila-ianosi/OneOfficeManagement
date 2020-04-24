@@ -49,17 +49,17 @@ class ReportSalesVC: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
               //Keyboard Texfield Delegates
-               self.reportDate.delegate = self
-               self.specialDelivery.delegate = self
-               self.internationalPost.delegate = self
-               self.parcelForce.delegate = self
-               self.globalExpress.delegate = self
-               self.moneyGram.delegate = self
-               self.firstClass.delegate = self
-               self.secondClass.delegate = self
-               self.royalMailSignedFor.delegate = self
-               self.travelMoneyCard.delegate = self
-               self.travelInsurance.delegate = self
+//               self.reportDate.delegate = self
+//               self.specialDelivery.delegate = self
+//               self.internationalPost.delegate = self
+//               self.parcelForce.delegate = self
+//               self.globalExpress.delegate = self
+//               self.moneyGram.delegate = self
+//               self.firstClass.delegate = self
+//               self.secondClass.delegate = self
+//               self.royalMailSignedFor.delegate = self
+//               self.travelMoneyCard.delegate = self
+//               self.travelInsurance.delegate = self
               
               // Realm Database Initialization
               let realm = RealmService.shared.realm

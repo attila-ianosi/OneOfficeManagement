@@ -105,10 +105,6 @@ class DirCreateUserVC: UIViewController, UITextFieldDelegate {
             }
         }
         
-        
-        
-       
-        
         performSegue(withIdentifier: "goToConfirmationUser", sender: self)
     }
     

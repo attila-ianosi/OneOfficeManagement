@@ -10,11 +10,13 @@ import UIKit
 import RealmSwift
 import Firebase
 
-class DirCreateUserVC: UIViewController, UITextFieldDelegate {
+class CreateUserVC: UIViewController, UITextFieldDelegate {
    
     
    
     var userName = ""
+    
+   // var roles: Results<Role>!
     var user: Results<User>!
     
     @IBOutlet weak var titleEmployee: UITextField!
@@ -42,6 +44,8 @@ class DirCreateUserVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var endDate: UITextField!
     
+    @IBOutlet weak var rolePosition: UITextField!
+    
     
     func configure(with user: User){
         titleEmployee.text = user.titleM
@@ -57,40 +61,32 @@ class DirCreateUserVC: UIViewController, UITextFieldDelegate {
         city.text = user.city
         startDate.text = user.startDate
         endDate.text = user.endDate
+        rolePosition.text = user.rolePosition
         
     }
     
     override func viewDidLoad() {
       super.viewDidLoad()
-        // Delegate for UITextfields
-//        self.titleEmployee.delegate = self
-//        self.firstName.delegate = self
-//        self.middleName.delegate = self
-//        self.lastName.delegate = self
-//        self.email.delegate = self
-//        self.dateOfBirth.delegate = self
-//        self.telephone.delegate = self
-//        self.password.delegate = self
-//        self.address.delegate = self
-//        self.postcode.delegate = self
-//        self.city.delegate = self
-//        self.startDate.delegate = self
-//        self.endDate.delegate = self
+
       
-    //   print(Realm.Configuration.defaultConfiguration.fileURL!)
+    print(Realm.Configuration.defaultConfiguration.fileURL!)
              let realm = RealmService.shared.realm
              user = realm.objects(User.self)
+            // roles = realm.objects(Role.self)
+            
                     
     }
     
     
     @IBAction func createUserButton(_ sender: UIButton) {
-        
-      
-        
-     let newUser = User(titleM: titleEmployee.text!, firstName: firstName.text!, middleName: middleName.text!, lastName: lastName.text!, email: email.text!, dateOfBirth: dateOfBirth.text!, telephone: telephone.text!, password: password.text!, address: address.text!, postcode:   postcode.text!, startDate: startDate.text!, endDate: endDate.text!)
+    
+     
+        let newUser = User(titleM: titleEmployee.text!, firstName: firstName.text!, middleName: middleName.text!, lastName: lastName.text!, email: email.text!, dateOfBirth: dateOfBirth.text!, telephone: telephone.text!, password: password.text!, address: address.text!, postcode: postcode.text!, city: city.text!, startDate: startDate.text!, endDate: endDate.text!, rolePosition: rolePosition.text!)
         
         RealmService.shared.create(newUser)
+        
+//        let newManager = Role(userType: rolePosition.text!)
+//        RealmService.shared.create(appennewManager)
     
         self.userName = firstName.text!
         

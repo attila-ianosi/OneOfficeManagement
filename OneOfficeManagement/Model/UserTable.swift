@@ -24,9 +24,11 @@ import RealmSwift
     dynamic var city: String = ""
     dynamic var startDate: String = ""
     dynamic var endDate: String? = nil
-   // dynamic var rolePosition: String = ""
+    dynamic var rolePosition: String = ""
     
-    convenience init(titleM: String, firstName: String, middleName: String, lastName: String, email: String, dateOfBirth: String, telephone: String, password: String, address: String, postcode: String, startDate: String, endDate: String?) {
+   // var parentCategory = LinkingObjects(fromType: User.self, property: "userRole")
+    
+    convenience init(titleM: String, firstName: String, middleName: String, lastName: String, email: String, dateOfBirth: String, telephone: String, password: String, address: String, postcode: String, city: String,startDate: String, endDate: String?, rolePosition: String) {
         
         self.init()
         self.titleM = titleM
@@ -42,7 +44,7 @@ import RealmSwift
         self.city = city
         self.startDate = startDate
         self.endDate = endDate
-      //  self.rolePosition = rolePosition
+        self.rolePosition = rolePosition
     }
     
     

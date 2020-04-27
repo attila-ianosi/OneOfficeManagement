@@ -12,10 +12,10 @@ struct BranchInfo {
     
     private(set) public var subject: String
     private(set) public var manager: String
-    private(set) public var infoDate: String
+    private(set) public var infoDate: Date?
     private(set) public var contentOfMessage: String
     
-    init(subject: String, manager: String, infoDate: String, contentOfMessage: String) {
+    init(subject: String, manager: String, infoDate: Date?, contentOfMessage: String) {
         self.subject = subject
         self.manager = manager
         self.infoDate = infoDate

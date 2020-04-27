@@ -7,20 +7,22 @@
 //
 
 import UIKit
+import RealmSwift
 
 class DirUserTypeVC: UIViewController {
     
-      
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
-        
+  
         
     }
     
     @IBAction func managerTapped(_ sender: UIButton) {
+        
+       
         
         performSegue(withIdentifier: "goToCreateUser", sender: self)
         

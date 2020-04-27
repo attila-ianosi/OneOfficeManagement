@@ -29,5 +29,9 @@ class ConfirmationReportSalesVC: UIViewController {
         performSegue(withIdentifier: "goToReportsHistory", sender: self)
     }
     
+    @IBAction func mainMenuPressed(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "goToMainMenuFromReport", sender: self)
+    }
     
 }

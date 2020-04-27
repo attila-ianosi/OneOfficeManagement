@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import Firebase
 
 class DirBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -25,13 +26,14 @@ class DirBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDele
         
         branchFocusTableView.dataSource = self
         branchFocusTableView.delegate = self
-        messages = realm.objects(Message.self)
-        branchFocusTableView.reloadData()
-       
+        messages = realm.objects(Message.self).sorted(byKeyPath: "dateOfMessage", ascending: true)
+        
 
+        branchFocusTableView.reloadData()
         
     }
     
+
     @IBAction func createBranchInfo(_ sender: UIButton) {
          performSegue(withIdentifier: "goToAddBranchInfo", sender: self)
     }
@@ -40,10 +42,6 @@ class DirBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDele
         
         performSegue(withIdentifier: "logOut", sender: self)
     }
-    
-    
-    
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -56,10 +54,9 @@ class DirBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDele
                
                    let item = messages?[indexPath.row].subjectInfo
                    let bodyMessage = messages?[indexPath.row].messageInfo
-                   
-                       
+            
                    cell.subjectTitle.text = item
-                   cell.managerName.text = "Harshil Deocamdata"
+            cell.managerName.text = "Harshil Deocamdata"
                    cell.contentMessage.text = bodyMessage
                    tableView.rowHeight = 100
                    cell.layer.cornerRadius = 8
@@ -72,9 +69,7 @@ class DirBranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDele
                      }
 
     }
-    
-   
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
               let indexPath = tableView.indexPathForSelectedRow
                let currentCell = tableView.cellForRow(at: indexPath!)! as! BranchInfoCell

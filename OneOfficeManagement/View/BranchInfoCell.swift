@@ -18,11 +18,15 @@ class BranchInfoCell: UITableViewCell {
     
     
     func updateNews(infoNews: BranchInfo ) {
+        let currentDateTime = Date()
+              let formatter = DateFormatter()
+        formatter.dateStyle = .short
+              let dateToString = formatter.string(from: currentDateTime)
+        
         subjectTitle.text = infoNews.subject
         managerName.text = infoNews.manager
-       dateLabel.text = infoNews.infoDate
+       dateLabel.text = dateToString
         contentMessage.text = infoNews.contentOfMessage
-      
         
     }
     

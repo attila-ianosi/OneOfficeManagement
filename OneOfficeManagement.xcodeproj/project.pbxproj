@@ -11,19 +11,20 @@
 		0D1B0C4D244F715A00A6F34C /* SalesFigureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1B0C4C244F715A00A6F34C /* SalesFigureCell.swift */; };
 		0D20565F2451FC9D008454B9 /* HolidayConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D20565E2451FC9D008454B9 /* HolidayConfirmationVC.swift */; };
 		0D2056612452066C008454B9 /* SeeHolidayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2056602452066C008454B9 /* SeeHolidayVC.swift */; };
+		0D28F33A245354B700B3FAC9 /* HomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28F339245354B700B3FAC9 /* HomeTabBar.swift */; };
+		0D28F33C245385EB00B3FAC9 /* ReportOpenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28F33B245385EB00B3FAC9 /* ReportOpenVC.swift */; };
+		0D421C27245713FE00BEA788 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D421C26245713FE00BEA788 /* Role.swift */; };
 		0D5368AE2445ECA900027840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368AD2445ECA900027840 /* AppDelegate.swift */; };
 		0D5368B02445ECA900027840 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368AF2445ECA900027840 /* SceneDelegate.swift */; };
 		0D5368B22445ECA900027840 /* LoginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368B12445ECA900027840 /* LoginScreenVC.swift */; };
-		0D5368B82445ECA900027840 /* OneOfficeManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368B62445ECA900027840 /* OneOfficeManagement.xcdatamodeld */; };
 		0D5368BA2445ECAB00027840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5368B92445ECAB00027840 /* Assets.xcassets */; };
 		0D5368BD2445ECAB00027840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5368BB2445ECAB00027840 /* LaunchScreen.storyboard */; };
 		0D5368C9244602CB00027840 /* DirectorMainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368C8244602CB00027840 /* DirectorMainMenuVC.swift */; };
 		0D5368CB244616DF00027840 /* DirBranchFocusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CA244616DF00027840 /* DirBranchFocusVC.swift */; };
 		0D5368CD2446181200027840 /* DirSalesHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CC2446181200027840 /* DirSalesHistoryVC.swift */; };
-		0D5368CF2446183900027840 /* DirCreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CE2446183900027840 /* DirCreateUserVC.swift */; };
+		0D5368CF2446183900027840 /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CE2446183900027840 /* CreateUserVC.swift */; };
 		0D5368D12446187400027840 /* DirUserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D02446187400027840 /* DirUserListVC.swift */; };
 		0D5368D324461FBD00027840 /* BranchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D224461FBD00027840 /* BranchInfo.swift */; };
-		0D5368D5244620C100027840 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D4244620C100027840 /* DataService.swift */; };
 		0D5368D82446245900027840 /* BranchInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D72446245900027840 /* BranchInfoCell.swift */; };
 		0D777A202450B0E300EEB9A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D777A1F2450B0E300EEB9A5 /* GoogleService-Info.plist */; };
 		0DA2E4742449EB700020860D /* CreateBranchInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */; };
@@ -50,21 +51,22 @@
 		0D1B0C4C244F715A00A6F34C /* SalesFigureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesFigureCell.swift; sourceTree = "<group>"; };
 		0D20565E2451FC9D008454B9 /* HolidayConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayConfirmationVC.swift; sourceTree = "<group>"; };
 		0D2056602452066C008454B9 /* SeeHolidayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeHolidayVC.swift; sourceTree = "<group>"; };
+		0D28F339245354B700B3FAC9 /* HomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBar.swift; sourceTree = "<group>"; };
+		0D28F33B245385EB00B3FAC9 /* ReportOpenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportOpenVC.swift; sourceTree = "<group>"; };
+		0D421C26245713FE00BEA788 /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
 		0D5368AA2445ECA900027840 /* OneOfficeManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneOfficeManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5368AD2445ECA900027840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D5368AF2445ECA900027840 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0D5368B12445ECA900027840 /* LoginScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenVC.swift; sourceTree = "<group>"; };
-		0D5368B72445ECA900027840 /* OneOfficeManagement.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OneOfficeManagement.xcdatamodel; sourceTree = "<group>"; };
 		0D5368B92445ECAB00027840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D5368BC2445ECAB00027840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D5368BE2445ECAB00027840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D5368C8244602CB00027840 /* DirectorMainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectorMainMenuVC.swift; sourceTree = "<group>"; };
 		0D5368CA244616DF00027840 /* DirBranchFocusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirBranchFocusVC.swift; sourceTree = "<group>"; };
 		0D5368CC2446181200027840 /* DirSalesHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirSalesHistoryVC.swift; sourceTree = "<group>"; };
-		0D5368CE2446183900027840 /* DirCreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirCreateUserVC.swift; sourceTree = "<group>"; };
+		0D5368CE2446183900027840 /* CreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
 		0D5368D02446187400027840 /* DirUserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirUserListVC.swift; sourceTree = "<group>"; };
 		0D5368D224461FBD00027840 /* BranchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfo.swift; sourceTree = "<group>"; };
-		0D5368D4244620C100027840 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0D5368D72446245900027840 /* BranchInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfoCell.swift; sourceTree = "<group>"; };
 		0D777A1F2450B0E300EEB9A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBranchInfoVC.swift; sourceTree = "<group>"; };
@@ -133,7 +135,6 @@
 				0D5368B92445ECAB00027840 /* Assets.xcassets */,
 				0D777A1F2450B0E300EEB9A5 /* GoogleService-Info.plist */,
 				0D5368BE2445ECAB00027840 /* Info.plist */,
-				0D5368B62445ECA900027840 /* OneOfficeManagement.xcdatamodeld */,
 			);
 			path = OneOfficeManagement;
 			sourceTree = "<group>";
@@ -141,8 +142,9 @@
 		0D5368C52445ECEF00027840 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0D5368D224461FBD00027840 /* BranchInfo.swift */,
+				0D421C26245713FE00BEA788 /* Role.swift */,
 				0DDE54E324478AF300EC0B72 /* UserTable.swift */,
+				0D5368D224461FBD00027840 /* BranchInfo.swift */,
 				0DA2E47D244A1E740020860D /* Figure.swift */,
 				0DA2E47F244A1F470020860D /* MessageInfo.swift */,
 				0DDDA181244B8B9A00BBD735 /* Holiday.swift */,
@@ -168,6 +170,7 @@
 				0DA2E479244A0C320020860D /* Director */,
 				0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */,
 				0DA2E4772449FC3E0020860D /* ConfirmationMessageCreatedVC.swift */,
+				0D28F339245354B700B3FAC9 /* HomeTabBar.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,7 +178,6 @@
 		0D5368D62446211D00027840 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0D5368D4244620C100027840 /* DataService.swift */,
 				0DDE54E52447A12300EC0B72 /* RealmService.swift */,
 			);
 			path = Services;
@@ -187,7 +189,7 @@
 				0D5368C8244602CB00027840 /* DirectorMainMenuVC.swift */,
 				0D5368CA244616DF00027840 /* DirBranchFocusVC.swift */,
 				0D5368CC2446181200027840 /* DirSalesHistoryVC.swift */,
-				0D5368CE2446183900027840 /* DirCreateUserVC.swift */,
+				0D5368CE2446183900027840 /* CreateUserVC.swift */,
 				0D5368D02446187400027840 /* DirUserListVC.swift */,
 				0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */,
 				0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */,
@@ -203,6 +205,7 @@
 				0DA2E481244A250B0020860D /* ReportSalesVC.swift */,
 				0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */,
 				0DCA35922450B2CA00A85988 /* SeeReportsVC.swift */,
+				0D28F33B245385EB00B3FAC9 /* ReportOpenVC.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -369,10 +372,11 @@
 				0DECC9712448E98500ACE902 /* UserListCell.swift in Sources */,
 				0DA2E480244A1F470020860D /* MessageInfo.swift in Sources */,
 				0D5368AE2445ECA900027840 /* AppDelegate.swift in Sources */,
-				0D5368B82445ECA900027840 /* OneOfficeManagement.xcdatamodeld in Sources */,
-				0D5368D5244620C100027840 /* DataService.swift in Sources */,
+				0D28F33C245385EB00B3FAC9 /* ReportOpenVC.swift in Sources */,
 				0D5368D82446245900027840 /* BranchInfoCell.swift in Sources */,
 				0DA2E4782449FC3E0020860D /* ConfirmationMessageCreatedVC.swift in Sources */,
+				0D421C27245713FE00BEA788 /* Role.swift in Sources */,
+				0D28F33A245354B700B3FAC9 /* HomeTabBar.swift in Sources */,
 				0D5368D324461FBD00027840 /* BranchInfo.swift in Sources */,
 				0D5368CD2446181200027840 /* DirSalesHistoryVC.swift in Sources */,
 				0DDE54E62447A12300EC0B72 /* RealmService.swift in Sources */,
@@ -380,7 +384,7 @@
 				0D5368B02445ECA900027840 /* SceneDelegate.swift in Sources */,
 				0D5368CB244616DF00027840 /* DirBranchFocusVC.swift in Sources */,
 				0DDDA182244B8B9A00BBD735 /* Holiday.swift in Sources */,
-				0D5368CF2446183900027840 /* DirCreateUserVC.swift in Sources */,
+				0D5368CF2446183900027840 /* CreateUserVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,19 +576,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		0D5368B62445ECA900027840 /* OneOfficeManagement.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0D5368B72445ECA900027840 /* OneOfficeManagement.xcdatamodel */,
-			);
-			currentVersion = 0D5368B72445ECA900027840 /* OneOfficeManagement.xcdatamodel */;
-			path = OneOfficeManagement.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 0D5368A22445ECA900027840 /* Project object */;
 }

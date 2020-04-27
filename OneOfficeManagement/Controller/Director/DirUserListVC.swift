@@ -45,7 +45,7 @@ class DirUserListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserListCell", for: indexPath)
         if let item = user?[indexPath.row]{
-            cell.textLabel?.text = item.firstName + " " + item.lastName
+            cell.textLabel?.text = item.firstName + " " + item.lastName + "  " + "(\(item.rolePosition))"
         } else{
             cell.textLabel?.text = "No user Added"
         }
@@ -55,9 +55,9 @@ class DirUserListVC: UIViewController, UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-      //  let userPicked = user[indexPath.row]
-    
-       // performSegue(withIdentifier: "goToUserDetails", sender: userPicked)
+//        if let user = user?[indexPath.row] {
+//            user.titleM = 
+//        }
         
     }
     

@@ -31,7 +31,10 @@ class ConfirmationMessageCreatedVC: UIViewController {
         performSegue(withIdentifier: "goToBranchMessages", sender: self)
     }
 
-
+    @IBAction func mainMenuBtn(_ sender: UIButton) {
+          performSegue(withIdentifier: "goToBranchMessages", sender: self)
+    }
+    
 }
 
 

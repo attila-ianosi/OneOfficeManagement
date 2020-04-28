@@ -71,7 +71,11 @@ class HolidayBookingVC: UIViewController, FSCalendarDelegate, UITextFieldDelegat
             selectedLeaveDate = leaveDateHoliday.text!
             selectedReturnDate = returnDateHoliday.text!
         
-       performSegue(withIdentifier: "goToHolidayRequestConfirmation", sender: self)
+        if leaveDateHoliday.text == "" || returnDateHoliday.text == "" || employeeName.text == "" || extraNotesforHoliday.text == "" {
+            createAlert(title: "ALERT", message: "There are missing fields")
+        } else {
+            performSegue(withIdentifier: "goToHolidayRequestConfirmation", sender: self)
+        }
         
     }
     
@@ -100,4 +104,12 @@ class HolidayBookingVC: UIViewController, FSCalendarDelegate, UITextFieldDelegat
         textField.resignFirstResponder()
         return(true)
     }
+    
+    func createAlert(title: String, message: String){
+          let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+          alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: { (action) in
+              alert.dismiss(animated: true, completion: nil)
+          }))
+          self.present(alert, animated: true, completion: nil)
+      }
 }

@@ -13,6 +13,9 @@ import Firebase
 class CreateUserVC: UIViewController, UITextFieldDelegate {
    
     //private var datePicker: UIDatePicker?
+    
+    static let instance = CreateUserVC()
+    
     var userName = ""
     var user: Results<User>!
     
@@ -57,26 +60,11 @@ class CreateUserVC: UIViewController, UITextFieldDelegate {
     print(Realm.Configuration.defaultConfiguration.fileURL!)
              let realm = RealmService.shared.realm
              user = realm.objects(User.self)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
            
-            // Date Picker
-//            datePicker = UIDatePicker()
-//            datePicker?.datePickerMode = .date
-//            datePicker?.addTarget(self, action: #selector(ReportSalesVC.dateChanged(datePicker:)), for: .valueChanged)
-//            startDate.inputView = datePicker
-//            dateOfBirth.inputView = datePicker
-//            endDate.inputView = datePicker
-                    
     }
-    
-    // Function that helps the Date Picker
-//       @objc func dateChanged(datePicker: UIDatePicker) {
-//           let dateFormatter = DateFormatter()
-//           dateFormatter.dateFormat = "dd.MM.yyyy"
-//           startDate.text = dateFormatter.string(from: datePicker.date)
-//           dateOfBirth.text = dateFormatter.string(from: datePicker.date)
-//           endDate.text = dateFormatter.string(from: datePicker.date)
-//       }
-    
     
     @IBAction func createUserButton(_ sender: UIButton) {
     
@@ -90,13 +78,14 @@ class CreateUserVC: UIViewController, UITextFieldDelegate {
         if let email2 = email.text, let password2 = password.text {
             Auth.auth().createUser(withEmail: email2, password: password2) { authResult, error in
                 if let e = error {
-                    print(e)
+                    self.createAlert(title: "Warning", message: "\(e.localizedDescription)")
                 } else {
                     print("user created")
+                    self.performSegue(withIdentifier: "goToConfirmationUser", sender: self)
                 }
             }
         }
-           performSegue(withIdentifier: "goToConfirmationUser", sender: self)
+           
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -113,5 +102,28 @@ class CreateUserVC: UIViewController, UITextFieldDelegate {
         return true
     }
     
+   func createAlert(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
 }
+
+
 

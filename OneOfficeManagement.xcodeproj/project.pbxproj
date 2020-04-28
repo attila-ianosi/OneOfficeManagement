@@ -35,6 +35,7 @@
 		0DA2E482244A250B0020860D /* ReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E481244A250B0020860D /* ReportSalesVC.swift */; };
 		0DA2E484244A40670020860D /* ConfirmationReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */; };
 		0DA5701E2458AE9E009129FA /* SeeEmployeesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5701D2458AE9E009129FA /* SeeEmployeesVC.swift */; };
+		0DA570202458D22C009129FA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5701F2458D22C009129FA /* Utilities.swift */; };
 		0DCA35932450B2CB00A85988 /* SeeReportsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA35922450B2CA00A85988 /* SeeReportsVC.swift */; };
 		0DCA35952450C6E300A85988 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCA35942450C6E300A85988 /* Main.storyboard */; };
 		0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */; };
@@ -78,6 +79,7 @@
 		0DA2E481244A250B0020860D /* ReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportSalesVC.swift; sourceTree = "<group>"; };
 		0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationReportSalesVC.swift; sourceTree = "<group>"; };
 		0DA5701D2458AE9E009129FA /* SeeEmployeesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeEmployeesVC.swift; sourceTree = "<group>"; };
+		0DA5701F2458D22C009129FA /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		0DCA35922450B2CA00A85988 /* SeeReportsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeReportsVC.swift; sourceTree = "<group>"; };
 		0DCA35942450C6E300A85988 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationUserCreatedVC.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				0DDE54E52447A12300EC0B72 /* RealmService.swift */,
+				0DA5701F2458D22C009129FA /* Utilities.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				0DA2E47E244A1E740020860D /* Figure.swift in Sources */,
 				0D1B0C49244F59E400A6F34C /* OpenMessageVC.swift in Sources */,
 				0DDDA180244A816600BBD735 /* HolidayBookingVC.swift in Sources */,
+				0DA570202458D22C009129FA /* Utilities.swift in Sources */,
 				0DA2E47C244A0C950020860D /* ManagerMainMenuVC.swift in Sources */,
 				0D5368B22445ECA900027840 /* LoginScreenVC.swift in Sources */,
 				0D2056612452066C008454B9 /* SeeHolidayVC.swift in Sources */,

@@ -57,6 +57,10 @@ class ReportSalesVC: UIViewController, UITextFieldDelegate {
                datePicker?.datePickerMode = .date
                datePicker?.addTarget(self, action: #selector(ReportSalesVC.dateChanged(datePicker:)), for: .valueChanged)
                reportDate.inputView = datePicker
+        
+              //Push the texfields
+              NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+              NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
                
     }
     
@@ -69,13 +73,19 @@ class ReportSalesVC: UIViewController, UITextFieldDelegate {
 
     @IBAction func submitSalesBtnPressed(_ sender: UIButton) {
         
-        let newSalesReport = Figure(reportDate: reportDate.text!, specialDelivery: specialDelivery.text!, internationalPost: internationalPost.text!, parcelForce: parcelForce.text!, globalExpress: globalExpress.text!, moneyGram: moneyGram.text!, firstClass: firstClass.text!, secondClass: secondClass.text!, royalMailSignedFor: royalMailSignedFor.text!, travelMoneyCard: travelMoneyCard.text!, travelInsurance: travelInsurance.text!)
         
+        let newSalesReport = Figure(reportDate: reportDate.text!, specialDelivery: specialDelivery.text!, internationalPost: internationalPost.text!, parcelForce: parcelForce.text!, globalExpress: globalExpress.text!, moneyGram: moneyGram.text!, firstClass: firstClass.text!, secondClass: secondClass.text!, royalMailSignedFor: royalMailSignedFor.text!, travelMoneyCard: travelMoneyCard.text!, travelInsurance: travelInsurance.text!)
+            //Add new report to database
             RealmService.shared.create(newSalesReport)
         
-        self.dateReport = reportDate.text!
+            self.dateReport = reportDate.text!
+        
+        if reportDate.text == "" {
+            createAlert(title: "Warning", message: "Report Date Missing")
+        } else {
             
-           performSegue(withIdentifier: "goToConfirmationSales", sender: self)
+            performSegue(withIdentifier: "goToConfirmationSales", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -92,6 +102,28 @@ class ReportSalesVC: UIViewController, UITextFieldDelegate {
           textField.resignFirstResponder()
           return(true)
       }
-}
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
 
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    func createAlert(title: String, message: String){
+          let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+          alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: { (action) in
+              alert.dismiss(animated: true, completion: nil)
+          }))
+          self.present(alert, animated: true, completion: nil)
+      }
+    
+}
 

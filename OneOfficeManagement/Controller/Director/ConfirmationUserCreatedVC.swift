@@ -12,15 +12,12 @@ class ConfirmationUserCreatedVC: UIViewController {
 
     var finalUserName = ""
     
- 
     @IBOutlet weak var confirmationLabel: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         confirmationLabel.text = "\(finalUserName)"
-       
     }
     
     @IBAction func seeUsersBtn(_ sender: UIButton) {
@@ -28,6 +25,4 @@ class ConfirmationUserCreatedVC: UIViewController {
         performSegue(withIdentifier: "seeUsersList", sender: self)
         
     }
-    
-
 }

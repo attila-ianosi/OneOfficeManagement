@@ -35,13 +35,9 @@ class ReportOpenVC: UIViewController {
     @IBOutlet weak var travelMoneyCardLabel: UILabel!
     @IBOutlet weak var travelInsurancelabel: UILabel!
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         dateReportLbl.text = dateReport
         specialDeliveryLabel.text = specialD
         internationalPostLabel.text = internationalP
@@ -54,8 +50,5 @@ class ReportOpenVC: UIViewController {
         travelMoneyCardLabel.text = tmc
         travelInsurancelabel.text = travelIns
         
-        
     }
-    
-
 }

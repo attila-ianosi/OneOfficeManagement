@@ -11,11 +11,10 @@ import RealmSwift
 
 class BranchInfoCell: UITableViewCell {
 
-   @IBOutlet weak var subjectTitle: UILabel!
-     @IBOutlet weak var managerName: UILabel!
+    @IBOutlet weak var subjectTitle: UILabel!
+    @IBOutlet weak var managerName: UILabel!
     @IBOutlet weak var dateLabel: UITextField!
     @IBOutlet weak var contentMessage: UILabel!
-    
     
     func updateNews(infoNews: BranchInfo ) {
         let currentDateTime = Date()
@@ -25,11 +24,7 @@ class BranchInfoCell: UITableViewCell {
         
         subjectTitle.text = infoNews.subject
         managerName.text = infoNews.manager
-       dateLabel.text = dateToString
+        dateLabel.text = dateToString
         contentMessage.text = infoNews.contentOfMessage
-        
     }
-    
-
-
 }

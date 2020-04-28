@@ -12,38 +12,23 @@ import Firebase
 
 class CreateUserVC: UIViewController, UITextFieldDelegate {
    
-    
-   
+    //private var datePicker: UIDatePicker?
     var userName = ""
-    
-   // var roles: Results<Role>!
     var user: Results<User>!
     
     @IBOutlet weak var titleEmployee: UITextField!
-    
     @IBOutlet weak var firstName: UITextField!
-    
     @IBOutlet weak var middleName: UITextField!
-    
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var lastName: UITextField!
-    
     @IBOutlet weak var dateOfBirth: UITextField!
-    
     @IBOutlet weak var telephone: UITextField!
-    
     @IBOutlet weak var password: UITextField!
-    
     @IBOutlet weak var address: UITextField!
-    
     @IBOutlet weak var postcode: UITextField!
-    
     @IBOutlet weak var city: UITextField!
-    
     @IBOutlet weak var startDate: UITextField!
-    
     @IBOutlet weak var endDate: UITextField!
-    
     @IBOutlet weak var rolePosition: UITextField!
     
     
@@ -72,10 +57,25 @@ class CreateUserVC: UIViewController, UITextFieldDelegate {
     print(Realm.Configuration.defaultConfiguration.fileURL!)
              let realm = RealmService.shared.realm
              user = realm.objects(User.self)
-            // roles = realm.objects(Role.self)
-            
+           
+            // Date Picker
+//            datePicker = UIDatePicker()
+//            datePicker?.datePickerMode = .date
+//            datePicker?.addTarget(self, action: #selector(ReportSalesVC.dateChanged(datePicker:)), for: .valueChanged)
+//            startDate.inputView = datePicker
+//            dateOfBirth.inputView = datePicker
+//            endDate.inputView = datePicker
                     
     }
+    
+    // Function that helps the Date Picker
+//       @objc func dateChanged(datePicker: UIDatePicker) {
+//           let dateFormatter = DateFormatter()
+//           dateFormatter.dateFormat = "dd.MM.yyyy"
+//           startDate.text = dateFormatter.string(from: datePicker.date)
+//           dateOfBirth.text = dateFormatter.string(from: datePicker.date)
+//           endDate.text = dateFormatter.string(from: datePicker.date)
+//       }
     
     
     @IBAction func createUserButton(_ sender: UIButton) {
@@ -84,9 +84,6 @@ class CreateUserVC: UIViewController, UITextFieldDelegate {
         let newUser = User(titleM: titleEmployee.text!, firstName: firstName.text!, middleName: middleName.text!, lastName: lastName.text!, email: email.text!, dateOfBirth: dateOfBirth.text!, telephone: telephone.text!, password: password.text!, address: address.text!, postcode: postcode.text!, city: city.text!, startDate: startDate.text!, endDate: endDate.text!, rolePosition: rolePosition.text!)
         
         RealmService.shared.create(newUser)
-        
-//        let newManager = Role(userType: rolePosition.text!)
-//        RealmService.shared.create(appennewManager)
     
         self.userName = firstName.text!
         
@@ -97,14 +94,10 @@ class CreateUserVC: UIViewController, UITextFieldDelegate {
                 } else {
                     print("user created")
                 }
-                   
             }
         }
-        
-        performSegue(withIdentifier: "goToConfirmationUser", sender: self)
+           performSegue(withIdentifier: "goToConfirmationUser", sender: self)
     }
-    
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as! ConfirmationUserCreatedVC
@@ -115,12 +108,10 @@ class CreateUserVC: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     //Hide Keyboard when user touches RETURN key
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
-    
-
 }
 

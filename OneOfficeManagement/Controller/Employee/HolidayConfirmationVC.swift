@@ -10,7 +10,6 @@ import UIKit
 
 class HolidayConfirmationVC: UIViewController {
     
-    
     var leaveDateSelected = ""
     var returnDateSelected = ""
 
@@ -18,8 +17,6 @@ class HolidayConfirmationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
         holidayDatesLabel.text = "\(leaveDateSelected) - \(returnDateSelected)"
     }
     
@@ -27,14 +24,10 @@ class HolidayConfirmationVC: UIViewController {
     @IBAction func seeHistoryHolidays(_ sender: UIButton) {
         
         performSegue(withIdentifier: "goToHolidayHistory", sender: self)
-      
     }
     
     @IBAction func returnToHomeButton(_ sender: UIButton) {
         
         performSegue(withIdentifier: "goMainMenuFromHoliday", sender: self)
     }
-    
-    
-    
 }

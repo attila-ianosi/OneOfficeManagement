@@ -20,6 +20,5 @@ struct BranchInfo {
         self.manager = manager
         self.infoDate = infoDate
         self.contentOfMessage = contentOfMessage
-        
     }
 }

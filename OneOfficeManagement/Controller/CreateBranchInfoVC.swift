@@ -12,28 +12,15 @@ import RealmSwift
 class CreateBranchInfoVC: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     var messageSubject = ""
-    
     var messages: Results<Message>!
     
-   
-    
-    
-    
     @IBOutlet weak var subjectLabelBranchInfo: UITextField!
-    
     @IBOutlet weak var messageBodyTxt: UITextView!
-    
     @IBOutlet weak var dateOfMessage: UITextField!
-    
-    
+    @IBOutlet weak var managerTextField: UITextField!
     
     func configure(with messages: Message){
-//      let currentDateTime = Date()
-//               let formatter = DateFormatter()
-//         formatter.dateStyle = .short
-//               let dateToString = formatter.string(from: currentDateTime)
-        
-        
+
         subjectLabelBranchInfo.text = messages.subjectInfo
         messageBodyTxt.text = messages.messageInfo
       //  dateOfMessage.text = dateToString
@@ -49,30 +36,23 @@ class CreateBranchInfoVC: UIViewController, UITextFieldDelegate, UITextViewDeleg
         self.messageBodyTxt.delegate = self
         
       print(Realm.Configuration.defaultConfiguration.fileURL!)
+//        /Users/attila.ianosi/Library/Developer/CoreSimulator/Devices/288128F7-C88F-4248-A85C-419AED9998F2/data/Containers/Data/Application/2BC74C77-6FAC-4157-AD16-A45FAD063E74/Documents/default.realm
         let realm = RealmService.shared.realm
         messages = realm.objects(Message.self)
-        
-
     }
     
-
     @IBAction func submitInfoPressed(_ sender: UIButton) {
         
-      
-        let newMessage = Message(subjectInfo: subjectLabelBranchInfo.text!, messageInfo: messageBodyTxt.text!, dateOfMessage: Date())
-        //let newMessage = Message(subjectInfo: subjectLabelBranchInfo.text!, messageInfo: messageBodyTxt.text!, dateOfMessage: dateOfMessage.text!)
-        
+        let newMessage = Message(subjectInfo: subjectLabelBranchInfo.text!, messageInfo: messageBodyTxt.text!, dateOfMessage: Date(), managerInfo: managerTextField.text!)
+            
         RealmService.shared.create(newMessage)
-        
         self.messageSubject = subjectLabelBranchInfo.text!
         
         performSegue(withIdentifier: "gotoMessageConfirmation", sender: self)
-    
-        
     }
     
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let vc = segue.destination as! ConfirmationMessageCreatedVC
+            let vc = segue.destination as! ConfirmBranchInfoDoneVC
             vc.finalMessage = self.messageSubject
         }
     
@@ -85,8 +65,7 @@ class CreateBranchInfoVC: UIViewController, UITextFieldDelegate, UITextViewDeleg
         textField.resignFirstResponder()
         return(true)
     }
-
-    }
+}
 
 
     

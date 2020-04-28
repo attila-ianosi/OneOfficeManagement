@@ -27,8 +27,6 @@ class HomeTabBar: UITabBarController {
         }
         
         navigationController?.popViewController(animated: true)
-          
     }
-    
 
 }

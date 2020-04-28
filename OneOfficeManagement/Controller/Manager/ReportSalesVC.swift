@@ -11,8 +11,8 @@ import RealmSwift
 
 class ReportSalesVC: UIViewController, UITextFieldDelegate {
     
+    private var datePicker: UIDatePicker?
     var dateReport = ""
-    
     var salesFigures: Results<Figure>!
 
     @IBOutlet weak var reportDate: UITextField!
@@ -48,25 +48,24 @@ class ReportSalesVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-              //Keyboard Texfield Delegates
-//               self.reportDate.delegate = self
-//               self.specialDelivery.delegate = self
-//               self.internationalPost.delegate = self
-//               self.parcelForce.delegate = self
-//               self.globalExpress.delegate = self
-//               self.moneyGram.delegate = self
-//               self.firstClass.delegate = self
-//               self.secondClass.delegate = self
-//               self.royalMailSignedFor.delegate = self
-//               self.travelMoneyCard.delegate = self
-//               self.travelInsurance.delegate = self
-              
               // Realm Database Initialization
               let realm = RealmService.shared.realm
               salesFigures = realm.objects(Figure.self)
         
+              // Date Picker
+               datePicker = UIDatePicker()
+               datePicker?.datePickerMode = .date
+               datePicker?.addTarget(self, action: #selector(ReportSalesVC.dateChanged(datePicker:)), for: .valueChanged)
+               reportDate.inputView = datePicker
+               
     }
     
+    // Function that helps the Date Picker
+    @objc func dateChanged(datePicker: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd.MM.yyyy"
+        reportDate.text = dateFormatter.string(from: datePicker.date)
+    }
 
     @IBAction func submitSalesBtnPressed(_ sender: UIButton) {
         
@@ -93,8 +92,6 @@ class ReportSalesVC: UIViewController, UITextFieldDelegate {
           textField.resignFirstResponder()
           return(true)
       }
-    
-
 }
 
 

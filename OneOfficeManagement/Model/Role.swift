@@ -17,7 +17,5 @@ class Role: Object{
     convenience init (userType: String){
         self.init()
         self.userType = userType
-        
     }
-
 }

@@ -14,16 +14,14 @@ class HolidayBookingVC: UIViewController, FSCalendarDelegate, UITextFieldDelegat
     
     var selectedLeaveDate = ""
     var selectedReturnDate = ""
-    
+    private var datePicker: UIDatePicker?
     var holidays: Results<Holiday>!
     
     @IBOutlet var calendar: FSCalendar!
-
     @IBOutlet weak var leaveDateHoliday: UITextField!
-    
     @IBOutlet weak var returnDateHoliday: UITextField!
-    
     @IBOutlet weak var extraNotesforHoliday: UITextView!
+    @IBOutlet weak var employeeName: UITextField!
     
     func configure(with holidays: Holiday){
         
@@ -43,23 +41,35 @@ class HolidayBookingVC: UIViewController, FSCalendarDelegate, UITextFieldDelegat
               self.leaveDateHoliday.delegate = self
               self.returnDateHoliday.delegate = self
               self.extraNotesforHoliday.delegate = self
+              self.employeeName.delegate = self
               
             //  print(Realm.Configuration.defaultConfiguration.fileURL!)
               let realm = RealmService.shared.realm
               holidays = realm.objects(Holiday.self)
         
+        // Date Picker
+        datePicker = UIDatePicker()
+        datePicker?.datePickerMode = .date
+        datePicker?.addTarget(self, action: #selector(ReportSalesVC.dateChanged(datePicker:)), for: .valueChanged)
+        returnDateHoliday.inputView = datePicker
+        
     }
+    
+    // Function that helps the Date Picker
+     @objc func dateChanged(datePicker: UIDatePicker) {
+         let dateFormatter = DateFormatter()
+         dateFormatter.dateFormat = "dd.MM.yyyy"
+         returnDateHoliday.text = dateFormatter.string(from: datePicker.date)
+     }
     
     @IBAction func submitHolidayPressed(_ sender: UIButton) {
         
-        
-        
-        let newHoliday = Holiday(leaveDateHoliday: leaveDateHoliday.text!, returnDateHoliday: returnDateHoliday.text!, extraNotesHoliday: extraNotesforHoliday.text!)
+        let newHoliday = Holiday(leaveDateHoliday: leaveDateHoliday.text!, returnDateHoliday: returnDateHoliday.text!, extraNotesHoliday: extraNotesforHoliday.text!, employeeName: employeeName.text!)
                
-               RealmService.shared.create(newHoliday)
+            RealmService.shared.create(newHoliday)
         
-         selectedLeaveDate = leaveDateHoliday.text!
-        selectedReturnDate = returnDateHoliday.text!
+            selectedLeaveDate = leaveDateHoliday.text!
+            selectedReturnDate = returnDateHoliday.text!
         
        performSegue(withIdentifier: "goToHolidayRequestConfirmation", sender: self)
         
@@ -70,9 +80,7 @@ class HolidayBookingVC: UIViewController, FSCalendarDelegate, UITextFieldDelegat
         vc.leaveDateSelected = self.selectedLeaveDate
         vc.returnDateSelected = self.selectedReturnDate
     }
-    
-    
-    
+
     //Select a date function
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         
@@ -92,6 +100,4 @@ class HolidayBookingVC: UIViewController, FSCalendarDelegate, UITextFieldDelegat
         textField.resignFirstResponder()
         return(true)
     }
-
-
 }

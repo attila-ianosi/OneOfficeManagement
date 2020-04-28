@@ -11,10 +11,9 @@ import RealmSwift
 
 class OpenMessageVC: UIViewController, UITextFieldDelegate {
     
-    var finalsubjectInfo = ""
-    var finalMessageSubject = ""
-    
-    var messages : Results<Message>!
+      var finalsubjectInfo = ""
+      var finalMessageSubject = ""
+      var messages : Results<Message>!
       let realm = RealmService.shared.realm
        
        @IBOutlet weak var seeInfoSubject: UILabel!
@@ -24,15 +23,12 @@ class OpenMessageVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       seeInfoSubject.text = "\(finalsubjectInfo)"
+        seeInfoSubject.text = "\(finalsubjectInfo)"
         seeMessageSubject.text = "\(finalMessageSubject)"
     }
-    
 
     @IBAction func mainMenuPressed(_ sender: UIButton) {
         
         performSegue(withIdentifier: "goToMainMenuAfterReadMessage", sender: self)
     }
-    
-
 }

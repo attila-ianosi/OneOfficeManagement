@@ -20,20 +20,21 @@
 		0D5368BA2445ECAB00027840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5368B92445ECAB00027840 /* Assets.xcassets */; };
 		0D5368BD2445ECAB00027840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5368BB2445ECAB00027840 /* LaunchScreen.storyboard */; };
 		0D5368C9244602CB00027840 /* DirectorMainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368C8244602CB00027840 /* DirectorMainMenuVC.swift */; };
-		0D5368CB244616DF00027840 /* DirBranchFocusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CA244616DF00027840 /* DirBranchFocusVC.swift */; };
+		0D5368CB244616DF00027840 /* BranchFocusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CA244616DF00027840 /* BranchFocusVC.swift */; };
 		0D5368CD2446181200027840 /* DirSalesHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CC2446181200027840 /* DirSalesHistoryVC.swift */; };
 		0D5368CF2446183900027840 /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368CE2446183900027840 /* CreateUserVC.swift */; };
-		0D5368D12446187400027840 /* DirUserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D02446187400027840 /* DirUserListVC.swift */; };
+		0D5368D12446187400027840 /* UserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D02446187400027840 /* UserListVC.swift */; };
 		0D5368D324461FBD00027840 /* BranchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D224461FBD00027840 /* BranchInfo.swift */; };
 		0D5368D82446245900027840 /* BranchInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5368D72446245900027840 /* BranchInfoCell.swift */; };
 		0D777A202450B0E300EEB9A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D777A1F2450B0E300EEB9A5 /* GoogleService-Info.plist */; };
 		0DA2E4742449EB700020860D /* CreateBranchInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */; };
-		0DA2E4782449FC3E0020860D /* ConfirmationMessageCreatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E4772449FC3E0020860D /* ConfirmationMessageCreatedVC.swift */; };
+		0DA2E4782449FC3E0020860D /* ConfirmBranchInfoDoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E4772449FC3E0020860D /* ConfirmBranchInfoDoneVC.swift */; };
 		0DA2E47C244A0C950020860D /* ManagerMainMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47B244A0C950020860D /* ManagerMainMenuVC.swift */; };
 		0DA2E47E244A1E740020860D /* Figure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47D244A1E740020860D /* Figure.swift */; };
 		0DA2E480244A1F470020860D /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E47F244A1F470020860D /* MessageInfo.swift */; };
 		0DA2E482244A250B0020860D /* ReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E481244A250B0020860D /* ReportSalesVC.swift */; };
 		0DA2E484244A40670020860D /* ConfirmationReportSalesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */; };
+		0DA5701E2458AE9E009129FA /* SeeEmployeesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5701D2458AE9E009129FA /* SeeEmployeesVC.swift */; };
 		0DCA35932450B2CB00A85988 /* SeeReportsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA35922450B2CA00A85988 /* SeeReportsVC.swift */; };
 		0DCA35952450C6E300A85988 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCA35942450C6E300A85988 /* Main.storyboard */; };
 		0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */; };
@@ -62,20 +63,21 @@
 		0D5368BC2445ECAB00027840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D5368BE2445ECAB00027840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D5368C8244602CB00027840 /* DirectorMainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectorMainMenuVC.swift; sourceTree = "<group>"; };
-		0D5368CA244616DF00027840 /* DirBranchFocusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirBranchFocusVC.swift; sourceTree = "<group>"; };
+		0D5368CA244616DF00027840 /* BranchFocusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchFocusVC.swift; sourceTree = "<group>"; };
 		0D5368CC2446181200027840 /* DirSalesHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirSalesHistoryVC.swift; sourceTree = "<group>"; };
 		0D5368CE2446183900027840 /* CreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
-		0D5368D02446187400027840 /* DirUserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirUserListVC.swift; sourceTree = "<group>"; };
+		0D5368D02446187400027840 /* UserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVC.swift; sourceTree = "<group>"; };
 		0D5368D224461FBD00027840 /* BranchInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfo.swift; sourceTree = "<group>"; };
 		0D5368D72446245900027840 /* BranchInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchInfoCell.swift; sourceTree = "<group>"; };
 		0D777A1F2450B0E300EEB9A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBranchInfoVC.swift; sourceTree = "<group>"; };
-		0DA2E4772449FC3E0020860D /* ConfirmationMessageCreatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationMessageCreatedVC.swift; sourceTree = "<group>"; };
+		0DA2E4772449FC3E0020860D /* ConfirmBranchInfoDoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBranchInfoDoneVC.swift; sourceTree = "<group>"; };
 		0DA2E47B244A0C950020860D /* ManagerMainMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerMainMenuVC.swift; sourceTree = "<group>"; };
 		0DA2E47D244A1E740020860D /* Figure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Figure.swift; sourceTree = "<group>"; };
 		0DA2E47F244A1F470020860D /* MessageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
 		0DA2E481244A250B0020860D /* ReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportSalesVC.swift; sourceTree = "<group>"; };
 		0DA2E483244A40670020860D /* ConfirmationReportSalesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationReportSalesVC.swift; sourceTree = "<group>"; };
+		0DA5701D2458AE9E009129FA /* SeeEmployeesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeEmployeesVC.swift; sourceTree = "<group>"; };
 		0DCA35922450B2CA00A85988 /* SeeReportsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeReportsVC.swift; sourceTree = "<group>"; };
 		0DCA35942450C6E300A85988 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationUserCreatedVC.swift; sourceTree = "<group>"; };
@@ -130,8 +132,6 @@
 				0D5368C52445ECEF00027840 /* Model */,
 				0D5368C62445ED0200027840 /* View */,
 				0D5368C72445ED0B00027840 /* Controller */,
-				0D5368B12445ECA900027840 /* LoginScreenVC.swift */,
-				0DCA35942450C6E300A85988 /* Main.storyboard */,
 				0D5368B92445ECAB00027840 /* Assets.xcassets */,
 				0D777A1F2450B0E300EEB9A5 /* GoogleService-Info.plist */,
 				0D5368BE2445ECAB00027840 /* Info.plist */,
@@ -155,6 +155,7 @@
 		0D5368C62445ED0200027840 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0DCA35942450C6E300A85988 /* Main.storyboard */,
 				0D5368D72446245900027840 /* BranchInfoCell.swift */,
 				0DECC9702448E98500ACE902 /* UserListCell.swift */,
 				0D1B0C4C244F715A00A6F34C /* SalesFigureCell.swift */,
@@ -165,12 +166,14 @@
 		0D5368C72445ED0B00027840 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0D5368B12445ECA900027840 /* LoginScreenVC.swift */,
+				0D28F339245354B700B3FAC9 /* HomeTabBar.swift */,
+				0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */,
+				0DA2E4772449FC3E0020860D /* ConfirmBranchInfoDoneVC.swift */,
+				0D1B0C48244F59E400A6F34C /* OpenMessageVC.swift */,
 				0DDDA176244A78A000BBD735 /* Employee */,
 				0DA2E47A244A0C780020860D /* Manager */,
 				0DA2E479244A0C320020860D /* Director */,
-				0DA2E4732449EB700020860D /* CreateBranchInfoVC.swift */,
-				0DA2E4772449FC3E0020860D /* ConfirmationMessageCreatedVC.swift */,
-				0D28F339245354B700B3FAC9 /* HomeTabBar.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,13 +190,13 @@
 			isa = PBXGroup;
 			children = (
 				0D5368C8244602CB00027840 /* DirectorMainMenuVC.swift */,
-				0D5368CA244616DF00027840 /* DirBranchFocusVC.swift */,
+				0D5368CA244616DF00027840 /* BranchFocusVC.swift */,
 				0D5368CC2446181200027840 /* DirSalesHistoryVC.swift */,
 				0D5368CE2446183900027840 /* CreateUserVC.swift */,
-				0D5368D02446187400027840 /* DirUserListVC.swift */,
+				0D5368D02446187400027840 /* UserListVC.swift */,
 				0DDE54E72447A88E00EC0B72 /* DirUserTypeVC.swift */,
 				0DD0C4FB2448C507007CE393 /* ConfirmationUserCreatedVC.swift */,
-				0D1B0C48244F59E400A6F34C /* OpenMessageVC.swift */,
+				0DA5701D2458AE9E009129FA /* SeeEmployeesVC.swift */,
 			);
 			path = Director;
 			sourceTree = "<group>";
@@ -357,7 +360,7 @@
 				0DA2E4742449EB700020860D /* CreateBranchInfoVC.swift in Sources */,
 				0DDE54E82447A88E00EC0B72 /* DirUserTypeVC.swift in Sources */,
 				0D5368C9244602CB00027840 /* DirectorMainMenuVC.swift in Sources */,
-				0D5368D12446187400027840 /* DirUserListVC.swift in Sources */,
+				0D5368D12446187400027840 /* UserListVC.swift in Sources */,
 				0DD0C4FC2448C507007CE393 /* ConfirmationUserCreatedVC.swift in Sources */,
 				0D1B0C4D244F715A00A6F34C /* SalesFigureCell.swift in Sources */,
 				0DA2E47E244A1E740020860D /* Figure.swift in Sources */,
@@ -374,15 +377,16 @@
 				0D5368AE2445ECA900027840 /* AppDelegate.swift in Sources */,
 				0D28F33C245385EB00B3FAC9 /* ReportOpenVC.swift in Sources */,
 				0D5368D82446245900027840 /* BranchInfoCell.swift in Sources */,
-				0DA2E4782449FC3E0020860D /* ConfirmationMessageCreatedVC.swift in Sources */,
+				0DA2E4782449FC3E0020860D /* ConfirmBranchInfoDoneVC.swift in Sources */,
 				0D421C27245713FE00BEA788 /* Role.swift in Sources */,
 				0D28F33A245354B700B3FAC9 /* HomeTabBar.swift in Sources */,
 				0D5368D324461FBD00027840 /* BranchInfo.swift in Sources */,
 				0D5368CD2446181200027840 /* DirSalesHistoryVC.swift in Sources */,
+				0DA5701E2458AE9E009129FA /* SeeEmployeesVC.swift in Sources */,
 				0DDE54E62447A12300EC0B72 /* RealmService.swift in Sources */,
 				0DDE54E424478AF300EC0B72 /* UserTable.swift in Sources */,
 				0D5368B02445ECA900027840 /* SceneDelegate.swift in Sources */,
-				0D5368CB244616DF00027840 /* DirBranchFocusVC.swift in Sources */,
+				0D5368CB244616DF00027840 /* BranchFocusVC.swift in Sources */,
 				0DDDA182244B8B9A00BBD735 /* Holiday.swift in Sources */,
 				0D5368CF2446183900027840 /* CreateUserVC.swift in Sources */,
 			);

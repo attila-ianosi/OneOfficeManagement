@@ -15,8 +15,5 @@ class UserListCell: UITableViewCell {
 
     func updateUser(user: User){
         userNameInCell.text = user.firstName
-        
     }
-    
-    
 }

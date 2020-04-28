@@ -17,13 +17,9 @@ class ConfirmationReportSalesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
         confimationSalesReport.text = "\(finalDate)"
-        
     }
     
- 
-
     @IBAction func seeReportsBtnPressed(_ sender: UIButton) {
         
         performSegue(withIdentifier: "goToReportsHistory", sender: self)
@@ -33,5 +29,4 @@ class ConfirmationReportSalesVC: UIViewController {
         
         performSegue(withIdentifier: "goToMainMenuFromReport", sender: self)
     }
-    
 }

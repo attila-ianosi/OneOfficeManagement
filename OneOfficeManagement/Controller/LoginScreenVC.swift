@@ -12,11 +12,8 @@ import Firebase
 class LoginScreenVC: UIViewController {
 
     @IBOutlet weak var appLogoLogin: UIImageView!
-    
     @IBOutlet weak var userDetailsTextField: UITextField!
-    
     @IBOutlet weak var passwordDetailsTextField: UITextField!
-    
     @IBOutlet weak var signInBtn: UIButton!
     
     override func viewDidLoad() {
@@ -37,7 +34,7 @@ class LoginScreenVC: UIViewController {
                 } else if email == "1@2.com", password == "123456" {
                     
                     self.performSegue(withIdentifier: "goToDirectorPage", sender: self)
-                } else if email == "angel@love.com", password == "123456"{
+                } else if email == "a@2.com", password == "123456"{
                    
                     self.performSegue(withIdentifier: "goToManagerPage", sender: self)
                     
@@ -45,23 +42,16 @@ class LoginScreenVC: UIViewController {
                     self.performSegue(withIdentifier: "goToEmployeePage", sender: self)
                 }
         }
-    
-        
     }
-    
 }
     
- 
-    
-    
-    //Hides Keyboard when user touches outside
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    //Hide Keyboard when user touches RETURN key
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return(true)
-    }
-
+ //Hides Keyboard when user touches outside
+   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+       self.view.endEditing(true)
+   }
+   //Hide Keyboard when user touches RETURN key
+   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+       textField.resignFirstResponder()
+       return(true)
+   }
 }

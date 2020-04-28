@@ -12,12 +12,8 @@ class SalesFigureCell: UITableViewCell {
     
      @IBOutlet weak var dateOfReportSales: UILabel!
      
-     
      func updateSalesFigure(salesFigure: Figure ) {
         dateOfReportSales.text = salesFigure.reportDate
         
      }
-  
-
-
 }

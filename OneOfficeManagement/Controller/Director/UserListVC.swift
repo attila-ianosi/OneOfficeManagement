@@ -68,7 +68,7 @@ class UserListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
              
         if let item = user?[indexPath.row]{
                
-            eFullNameToBePassed = item.firstName + item.lastName
+            eFullNameToBePassed = item.firstName + "  " + item.lastName
             ePositionToBePassed = item.rolePosition
             eTitleToBePassed = item.titleM
             eEmailToBePassed = item.email

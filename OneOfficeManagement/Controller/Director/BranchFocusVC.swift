@@ -38,10 +38,8 @@ class BranchFocusVC: UIViewController, UITableViewDataSource, UITableViewDelegat
          performSegue(withIdentifier: "goToAddBranchInfo", sender: self)
     }
     
-    @IBAction func logOutBtn(_ sender: UIBarButtonItem) {
-        
-        performSegue(withIdentifier: "logOut", sender: self)
-    }
+ 
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         

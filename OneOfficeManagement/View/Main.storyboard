@@ -1883,7 +1883,13 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="My6-FD-R89" customClass="HomeTabBar" customModule="OneOfficeManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="a4J-m2-PWt"/>
+                    <navigationItem key="navigationItem" id="a4J-m2-PWt">
+                        <barButtonItem key="rightBarButtonItem" title="LogOut" image="power" catalog="system" id="9et-Rs-Rxg">
+                            <connections>
+                                <action selector="logOutPressed:" destination="My6-FD-R89" id="xvj-Yx-aZ1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T9M-zC-5TT">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1906,7 +1912,11 @@
                 <tabBarController title="Reports History" automaticallyAdjustsScrollViewInsets="NO" id="1uh-XN-zg2" customClass="HomeTabBar" customModule="OneOfficeManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="K9m-zB-uL2">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="12r-6e-YcO"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="power" catalog="system" id="38O-lw-n6X">
+                            <connections>
+                                <action selector="logOutPressed:" destination="1uh-XN-zg2" id="iaa-ca-h3y"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RlD-TX-S4t">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -2197,7 +2207,13 @@
         <scene sceneID="OGN-iX-MOC">
             <objects>
                 <tabBarController id="Jmu-Gn-4sF" customClass="HomeTabBar" customModule="OneOfficeManagement" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="vlh-SD-XQ2"/>
+                    <navigationItem key="navigationItem" id="vlh-SD-XQ2">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="power" catalog="system" id="lht-9q-ycR">
+                            <connections>
+                                <action selector="logOutPressed:" destination="Jmu-Gn-4sF" id="DqT-k0-lCq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9v3-0f-2bH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2306,13 +2322,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CCa-Dy-RXm"/>
+        <segue reference="ZdM-rW-31Q"/>
         <segue reference="2uk-hK-CbA"/>
         <segue reference="xgc-zw-LOi"/>
         <segue reference="Cko-lp-Qs7"/>
         <segue reference="uui-jY-hFg"/>
-        <segue reference="RuV-og-nbw"/>
-        <segue reference="p9M-9F-Vch"/>
+        <segue reference="W9d-ii-RZp"/>
+        <segue reference="DH7-se-kZ7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="book.fill" catalog="system" width="128" height="100"/>
@@ -2323,5 +2339,6 @@
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="person.crop.circle.fill.badge.plus" catalog="system" width="128" height="101"/>
         <image name="plus.bubble" catalog="system" width="128" height="110"/>
+        <image name="power" catalog="system" width="128" height="124"/>
     </resources>
 </document>

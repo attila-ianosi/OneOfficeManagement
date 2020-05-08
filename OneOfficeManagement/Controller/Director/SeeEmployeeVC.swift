@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SeeEmployeesVC: UIViewController {
-    
+class SeeEmployeeVC: UIViewController {
+    //MARK: Passed Variable
     var eFullName = ""
     var ePosition = ""
     var eTitle = ""
@@ -22,7 +22,7 @@ class SeeEmployeesVC: UIViewController {
     var eCity = ""
     var eStartDate = ""
     var eEndDate = ""
-    
+    //MARK: Services Outlet
     @IBOutlet weak var eFullNameLabel: UILabel!
     @IBOutlet weak var ePositionLabel: UILabel!
     @IBOutlet weak var eTitleLabel: UILabel!
@@ -36,10 +36,9 @@ class SeeEmployeesVC: UIViewController {
     @IBOutlet weak var eStartDateLabel: UILabel!
     @IBOutlet weak var eEndDateLabel: UILabel!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //MARK: Labels to be showed
         eFullNameLabel.text = eFullName
         ePositionLabel.text = ePosition
         eTitleLabel.text = eTitle
@@ -52,7 +51,5 @@ class SeeEmployeesVC: UIViewController {
         eCityLabel.text = eCity
         eStartDateLabel.text = eStartDate
         eEndDateLabel.text = eEndDate
-
     }
-
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ConfirmBranchInfoDoneVC: UIViewController {
+class ConfirmBranchInfoVC: UIViewController {
     
     var finalMessage = ""
 
@@ -16,20 +16,17 @@ class ConfirmBranchInfoDoneVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+         //MARK: Label Declaration
         confirmationLabelMessage.text = "\(finalMessage)"
-        
     }
-
+    //MARK: See Branch Info Button
     @IBAction func seeBranchInfoMessages(_ sender: UIButton) {
-        
         performSegue(withIdentifier: "goToBranchMessages", sender: self)
     }
-
+    //MARK: Main Menu Button
     @IBAction func mainMenuBtn(_ sender: UIButton) {
           performSegue(withIdentifier: "goToBranchMessages", sender: self)
     }
-    
 }
 
 

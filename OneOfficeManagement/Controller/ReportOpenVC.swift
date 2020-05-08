@@ -9,7 +9,7 @@
 import UIKit
 
 class ReportOpenVC: UIViewController {
-    
+    //MARK: Passed Variables
     var dateReport = ""
     var specialD = ""
     var internationalP = ""
@@ -21,8 +21,7 @@ class ReportOpenVC: UIViewController {
     var royalMSF = ""
     var tmc = ""
     var travelIns = ""
-
-
+    //MARK: Report Outlets
     @IBOutlet weak var dateReportLbl: UILabel!
     @IBOutlet weak var specialDeliveryLabel: UILabel!
     @IBOutlet weak var internationalPostLabel: UILabel!
@@ -37,7 +36,7 @@ class ReportOpenVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //MARK: Labels for services
         dateReportLbl.text = dateReport
         specialDeliveryLabel.text = specialD
         internationalPostLabel.text = internationalP
@@ -49,6 +48,5 @@ class ReportOpenVC: UIViewController {
         royalMailSignedForLabel.text = royalMSF
         travelMoneyCardLabel.text = tmc
         travelInsurancelabel.text = travelIns
-        
     }
 }
